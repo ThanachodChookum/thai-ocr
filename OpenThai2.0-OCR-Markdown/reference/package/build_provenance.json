@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "artifact": "nemotron_parse-3.5.0.post7-py3-none-any.whl",
+  "sha256": "e403d294fc9c0563f6d38028ce0e0a639977fdba2807fa6981692aabbf269077",
+  "source_repository": "nvidia/Nemotron-3.5-Parse",
+  "base_source_revision": "213eed554008e633b1150977049a8c66b7717852",
+  "source_description": "Local compliance amendments to the base revision; exact final inputs captured below and in the source archive.",
+  "package_version": "3.5.0.post7",
+  "model_version": "3.5.0",
+  "build_tools": {
+    "python": "3.10.12",
+    "build": "1.2.2.post1",
+    "setuptools": "80.9.0",
+    "wheel": "0.46.3"
+  },
+  "build_method": "python -m build --wheel --no-isolation --outdir dist",
+  "SOURCE_DATE_EPOCH": 315532800,
+  "source_archive": "nemotron-parse-3.5.0.post7-build-source.tar.gz",
+  "source_archive_sha256": "a51b4030b7757dd465274225a2ad6a522b371a55d70e9291c33b95ffc30d1d64",
+  "source_files": [
+    {
+      "path": "LICENSE",
+      "bytes": 3051,
+      "sha256": "3375384ee1050a54d69c98c74d6499841166cd7db823ed90358f430df8c39856"
+    },
+    {
+      "path": "POSTPROCESSING.md",
+      "bytes": 23786,
+      "sha256": "bae516b500d3c49f4dc127a5869bc6e92c66d941eb84740aeeda816160c3839d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 29803,
+      "sha256": "9e9fc6ec8b3e68180d1cddf943e70d8a24d6c5a4e6ed2b1e9cb976de7679cb44"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 730187,
+      "sha256": "3ffde205eb8d5d6458dcd1b6bc3d59b2b92d650b95e1e56f75dbed2bbed78b64"
+    },
+    {
+      "path": "TOKENIZER_ATTRIBUTION.md",
+      "bytes": 1963,
+      "sha256": "9a1cb165c21860d78a05a8b4aacb24de025719e2c3ed33ee86d1722ccaec442a"
+    },
+    {
+      "path": "latex2html.py",
+      "bytes": 448,
+      "sha256": "d3efc436b39344d3d9443b92a099c67ba9492b23fb13045638d7aaf331e49ec6"
+    },
+    {
+      "path": "nemotron_parse/SOURCE_MANIFEST.json",
+      "bytes": 5479,
+      "sha256": "a0fe800712c537f68a38f494902ac4e1f9b5910c3a786ed2a1dd0aab2f7808c8"
+    },
+    {
+      "path": "nemotron_parse/__init__.py",
+      "bytes": 373,
+      "sha256": "d526a90593085f19ee36e36d552c12ad7e282303da99adb69d854daff64cd075"
+    },
+    {
+      "path": "nemotron_parse/batch.py",
+      "bytes": 21905,
+      "sha256": "d3e7fe9efb6f00ae776ef5b290c95b28a9d77031984b52501c6ee5c9d9ab2b39"
+    },
+    {
+      "path": "nemotron_parse/engine/__init__.py",
+      "bytes": 138,
+      "sha256": "f0b3bb691d1a6a3168fe9a9d3d7ea1e718c545ce71f6c6f245f38b3071a24075"
+    },
+    {
+      "path": "nemotron_parse/engine/caption_relocation.py",
+      "bytes": 3421,
+      "sha256": "d3eb0308922495e0e57abcbfb73d132e57a2afa5b3add26326c996e957d193dc"
+    },
+    {
+      "path": "nemotron_parse/engine/chart_caption.py",
+      "bytes": 2362,
+      "sha256": "b63fcafce57aa2905c43886616d0560df33dd3785ea57f98683b7a68243f2db0"
+    },
+    {
+      "path": "nemotron_parse/engine/chart_context.py",
+      "bytes": 1379,
+      "sha256": "8c22ec2364db672b1df19e9c59030222acbb893d721222936fa38130caf0a32a"
+    },
+    {
+      "path": "nemotron_parse/engine/convert/__init__.py",
+      "bytes": 138,
+      "sha256": "f0b3bb691d1a6a3168fe9a9d3d7ea1e718c545ce71f6c6f245f38b3071a24075"
+    },
+    {
+      "path": "nemotron_parse/engine/convert/hybrid_cleanup.py",
+      "bytes": 2377,
+      "sha256": "a00d0a09f451bbaeed5b6fa9dd37e8e781d9a014cac510e616fd6a029249f1f6"
+    },
+    {
+      "path": "nemotron_parse/engine/convert/hybrid_inline.py",
+      "bytes": 6110,
+      "sha256": "33b8d7aaab8294a73898f409754a6521ac1117af5df5e20b8272eac184c511ec"
+    },
+    {
+      "path": "nemotron_parse/engine/convert/latex2html.py",
+      "bytes": 22518,
+      "sha256": "3dacfe5a2d8f2aaf9b077a9268e73356be602abdcf3d310fef8850213b13e13b"
+    },
+    {
+      "path": "nemotron_parse/engine/convert/rich_table_fallback.py",
+      "bytes": 3890,
+      "sha256": "bed8be6df2d254ff48a66efb2a2e2474e18391b87e8649d01843206ec27fbd89"
+    },
+    {
+      "path": "nemotron_parse/engine/convert/rich_table_reader.py",
+      "bytes": 4874,
+      "sha256": "8f6a4c8b1a71ca25923a5bbb8e1c86ab961f3dc046eb344c30b79344852b655e"
+    },
+    {
+      "path": "nemotron_parse/engine/convert/semantic_styles.py",
+      "bytes": 2107,
+      "sha256": "66be8ab92fa407bb45e81d79fd6842bae0cc8dd542f2e8b12abc275184469ee9"
+    },
+    {
+      "path": "nemotron_parse/engine/geometry.py",
+      "bytes": 13484,
+      "sha256": "8f1008d7bbd23314c80b5ee01cb7ee7191865f43e36b9d3f431441d53c2ec3bb"
+    },
+    {
+      "path": "nemotron_parse/engine/header_inference_probe.py",
+      "bytes": 3379,
+      "sha256": "83f038ca2a27f2dea395cf4e96990e4bacc3cb86a06c3c1943d2bff1cae761c2"
+    },
+    {
+      "path": "nemotron_parse/engine/markdown.py",
+      "bytes": 2090,
+      "sha256": "5569d25a4b12c11586dfb3341d0a438c6fae6199429026386d87b0a8f473361d"
+    },
+    {
+      "path": "nemotron_parse/engine/merge.py",
+      "bytes": 20296,
+      "sha256": "3a6f876e28bc32bc1d7e788b63c1b04a53d6eb20b59ab506c0538e83e444f079"
+    },
+    {
+      "path": "nemotron_parse/engine/policies.py",
+      "bytes": 12353,
+      "sha256": "6c5fbdc633b22e2c87a37e1f86f0af19ca64eef1639a517a0c06680aa4609196"
+    },
+    {
+      "path": "nemotron_parse/engine/regions.py",
+      "bytes": 1200,
+      "sha256": "9c38e9fb52413d8a5fb82f071d9a3599988819c4df66db302093a758f6262a07"
+    },
+    {
+      "path": "nemotron_parse/engine/text_cleanup.py",
+      "bytes": 1401,
+      "sha256": "192b165696101d6532ed566403652515123094f596069ca1e6aedc6dc8fd801f"
+    },
+    {
+      "path": "nemotron_parse/inference.py",
+      "bytes": 24507,
+      "sha256": "326d1e15a69831e9ae0e6506744dae7888efcfce456c2abdf58dccfea6d604fb"
+    },
+    {
+      "path": "nemotron_parse/postprocessing.py",
+      "bytes": 8430,
+      "sha256": "813528d2ae070ad28ca63cd1de6b0190030a593b33be9c814007d9ae59899332"
+    },
+    {
+      "path": "nemotron_parse/tables.py",
+      "bytes": 11858,
+      "sha256": "6af46abd69c0690d81c26f570f5352b699ad7d529481d4f445676cceac2b33c7"
+    },
+    {
+      "path": "postprocessing.py",
+      "bytes": 502,
+      "sha256": "cef5a7379720d479f7fd6fe47fb0e83097ff47bc053f751e747134c882d5a3fe"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 1395,
+      "sha256": "e53cc9fe115d0ff076ea22f1fff1d9ff6d83d17a7d2267a33c886a3e5c59c4f3"
+    },
+    {
+      "path": "tests/test_batch.py",
+      "bytes": 12030,
+      "sha256": "9dfd7750efb6b9014475d2b16f3b0c9891eba65dfa41a4d56bae1a112d83ec8d"
+    },
+    {
+      "path": "tests/test_inference.py",
+      "bytes": 13163,
+      "sha256": "df1d8d7c80a500d2c54dd40c2942e90c865a1faf89cf7abe8ed4b94a8e85fde5"
+    },
+    {
+      "path": "tests/test_postprocessing.py",
+      "bytes": 10003,
+      "sha256": "a0d968ef27e8eb8509781d1d0e82908b3e0648a68dab5c547f255dbc03fa6461"
+    },
+    {
+      "path": "vllm_tied_patch/__init__.py",
+      "bytes": 247,
+      "sha256": "4c41ff4e28ba556bbe05c9d4cd7dffebc0364e1f6a77b2bb23508fa77314b8b8"
+    },
+    {
+      "path": "vllm_tied_patch/compatibility.py",
+      "bytes": 36130,
+      "sha256": "c71b97530bb80bd365cd69064791c2943c0f4bc03a2a092abc53ea860c631a7e"
+    },
+    {
+      "path": "vllm_tied_patch/defaults.py",
+      "bytes": 1969,
+      "sha256": "0bae724df1039619f5f500a03c34111b6bcb469d35d56e51a3646b3578386734"
+    },
+    {
+      "path": "vllm_tied_patch/mtp_weights.py",
+      "bytes": 3401,
+      "sha256": "50df2a3aa03256692136852d69421559c591ed4843fb36a9199aae161bd2e6a1"
+    },
+    {
+      "path": "vllm_tied_patch/plugin.py",
+      "bytes": 3156,
+      "sha256": "c00298c66f89c0912691abba4f72d996c589ac335f89a6b82b9c81b751a17646"
+    },
+    {
+      "path": "vllm_tied_patch/vllm_radio_mbart_mtp.py",
+      "bytes": 3718,
+      "sha256": "3bf27b0cfb9c96aa7e81989810c50875c804d379981bbb2c1ef47ce2e0457f70"
+    },
+    {
+      "path": "vllm_tied_patch/vllm_radio_mbart_prefix.py",
+      "bytes": 19425,
+      "sha256": "3f2ac3b4884fd37747d083a3d26e487456323b27eb0ea90325e57f8e2ca82657"
+    }
+  ],
+  "checks": {
+    "repeat_build_from_captured_archive_identical": true,
+    "wheel_RECORD_verified": true,
+    "license_documents_match_final_sources": true,
+    "all_runtime_python_identical_to_post6": true,
+    "runtime_python_files_checked": 32,
+    "root_license_and_tokenizer_attribution_unchanged": true,
+    "prior_notice_text_preserved": true,
+    "current_python_headers_verified": 72,
+    "benchmark_lock_components_with_license_text": 80,
+    "portable_pipeline_manifest_verified": true
+  },
+  "tests": {
+    "source": {
+      "passed": 86,
+      "failed": 0
+    },
+    "installed_wheel": {
+      "passed": 86,
+      "failed": 0
+    }
+  },
+  "GPU_validation_rerun": false,
+  "GPU_validation_note": "Notice/version/header-only release. Runtime Python byte parity with post6 is verified; no new model-inference or scoring result claimed.",
+  "artifact_url": "https://huggingface.co/nvidia/Nemotron-3.5-Parse/resolve/41897c0ae2fe5d9b461b207bb13587ed54d2740c/nemotron_parse-3.5.0.post7-py3-none-any.whl",
+  "source_archive_url": "https://huggingface.co/nvidia/Nemotron-3.5-Parse/resolve/41897c0ae2fe5d9b461b207bb13587ed54d2740c/reference/package/nemotron-parse-3.5.0.post7-build-source.tar.gz"
+}

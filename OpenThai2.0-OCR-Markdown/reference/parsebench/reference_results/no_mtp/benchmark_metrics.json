@@ -1,0 +1,20 @@
+{
+  "model": "nemotron-parse",
+  "num_images": 2078,
+  "num_success": 2078,
+  "num_failed": 0,
+  "concurrency": 128,
+  "warmup_count": 16,
+  "preload_images": true,
+  "max_tokens": 8744,
+  "request_wall_s": 191.69799088593572,
+  "pages_per_second": 10.839967546850572,
+  "completion_tokens": 2928708,
+  "completion_tokens_per_second": 15277.7188037544,
+  "latency_s": {
+    "mean": 11.118739143116084,
+    "p50": 8.253045354504138,
+    "p95": 29.876938502164577,
+    "max": 71.39963329595048
+  }
+}

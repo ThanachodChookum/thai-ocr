@@ -1,0 +1,1012 @@
+{
+  "model": "nvidia/Nemotron-3.5-Parse",
+  "hardware": "One H200, BF16",
+  "pages_per_trial": 2078,
+  "independent_repeats": 3,
+  "statistic": "Median; observed min/max are not confidence intervals",
+  "selection_metric": "Fully completed pages per inference second",
+  "winners": {
+    "single": {
+      "settings": {
+        "mode": "single",
+        "concurrency": 128,
+        "capacity": 128,
+        "draft": 16,
+        "batch_tokens": 32768,
+        "prefix": true,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 17.777170543750234,
+      "processed_rate": 18.011194729357868,
+      "completed_range": [
+        17.63583791664956,
+        17.908738148240406
+      ],
+      "processed_range": [
+        17.876717654047702,
+        18.16220491558983
+      ],
+      "complete_pages": [
+        2049,
+        2051,
+        2050
+      ],
+      "tokens": [
+        2678232,
+        2674047,
+        2680942
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        }
+      ]
+    },
+    "double": {
+      "settings": {
+        "mode": "double",
+        "concurrency": 128,
+        "capacity": 192,
+        "draft": 16,
+        "batch_tokens": 32768,
+        "prefix": false,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 13.995984844135963,
+      "processed_rate": 14.263686368864409,
+      "completed_range": [
+        13.635665159920789,
+        14.507522594142927
+      ],
+      "processed_range": [
+        13.896474841743698,
+        14.756060670890358
+      ],
+      "complete_pages": [
+        2043,
+        2039,
+        2039
+      ],
+      "tokens": [
+        3791781,
+        3839100,
+        3819316
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 2337
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 2353
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 2343
+        }
+      ]
+    },
+    "triple": {
+      "settings": {
+        "mode": "triple",
+        "concurrency": 256,
+        "capacity": 256,
+        "draft": 16,
+        "batch_tokens": 65536,
+        "prefix": true,
+        "cache": 8,
+        "memory": 0.9,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 12.760647624071124,
+      "processed_rate": 12.991977345820576,
+      "completed_range": [
+        12.665496310560572,
+        12.948023577542324
+      ],
+      "processed_range": [
+        12.914083088000426,
+        13.18275011961438
+      ],
+      "complete_pages": [
+        2041,
+        2041,
+        2038
+      ],
+      "tokens": [
+        4192165,
+        4190074,
+        4207913
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 2078,
+          "crop": 2625
+        },
+        {
+          "fullpage": 2078,
+          "detection": 2078,
+          "crop": 2633
+        },
+        {
+          "fullpage": 2078,
+          "detection": 2078,
+          "crop": 2610
+        }
+      ]
+    }
+  },
+  "confirmed_profiles": [
+    {
+      "settings": {
+        "mode": "single",
+        "concurrency": 1,
+        "capacity": 64,
+        "draft": 32,
+        "batch_tokens": 32768,
+        "prefix": false,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 2.6001723809921358,
+      "processed_rate": 2.6382608436043253,
+      "completed_range": [
+        2.575941521411921,
+        2.6236829217680655
+      ],
+      "processed_range": [
+        2.6136750397919783,
+        2.6621157770674024
+      ],
+      "complete_pages": [
+        2048,
+        2048,
+        2048
+      ],
+      "tokens": [
+        2690504,
+        2690504,
+        2690504
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        }
+      ]
+    },
+    {
+      "settings": {
+        "mode": "single",
+        "concurrency": 2,
+        "capacity": 2,
+        "draft": 32,
+        "batch_tokens": 32768,
+        "prefix": false,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 4.70235904598427,
+      "processed_rate": 4.775905228521658,
+      "completed_range": [
+        4.682969565196626,
+        4.824188615533726
+      ],
+      "processed_range": [
+        4.753888987043766,
+        4.894855440956583
+      ],
+      "complete_pages": [
+        2046,
+        2048,
+        2047
+      ],
+      "tokens": [
+        2708815,
+        2695983,
+        2698871
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        }
+      ]
+    },
+    {
+      "settings": {
+        "mode": "single",
+        "concurrency": 4,
+        "capacity": 4,
+        "draft": 32,
+        "batch_tokens": 32768,
+        "prefix": false,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 7.726758637907933,
+      "processed_rate": 7.83229485345009,
+      "completed_range": [
+        7.507347378031041,
+        8.179612482828606
+      ],
+      "processed_range": [
+        7.617318286888918,
+        8.287291437990172
+      ],
+      "complete_pages": [
+        2051,
+        2050,
+        2048
+      ],
+      "tokens": [
+        2667442,
+        2683911,
+        2695038
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        }
+      ]
+    },
+    {
+      "settings": {
+        "mode": "single",
+        "concurrency": 8,
+        "capacity": 8,
+        "draft": 32,
+        "batch_tokens": 32768,
+        "prefix": false,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 11.300312866641013,
+      "processed_rate": 11.443494218752448,
+      "completed_range": [
+        11.114101752060728,
+        11.302029176217788
+      ],
+      "processed_range": [
+        11.260411233925984,
+        11.445232274941796
+      ],
+      "complete_pages": [
+        2051,
+        2052,
+        2052
+      ],
+      "tokens": [
+        2670519,
+        2674332,
+        2675976
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        }
+      ]
+    },
+    {
+      "settings": {
+        "mode": "single",
+        "concurrency": 16,
+        "capacity": 16,
+        "draft": 32,
+        "batch_tokens": 32768,
+        "prefix": false,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 13.72132422096978,
+      "processed_rate": 13.929121510100247,
+      "completed_range": [
+        13.629552372710384,
+        13.868329751046273
+      ],
+      "processed_range": [
+        13.80897602656859,
+        14.044049328788576
+      ],
+      "complete_pages": [
+        2052,
+        2051,
+        2047
+      ],
+      "tokens": [
+        2664515,
+        2667117,
+        2692456
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        }
+      ]
+    },
+    {
+      "settings": {
+        "mode": "single",
+        "concurrency": 32,
+        "capacity": 32,
+        "draft": 16,
+        "batch_tokens": 32768,
+        "prefix": false,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 16.24820263620281,
+      "processed_rate": 16.454076548747288,
+      "completed_range": [
+        15.913943267172057,
+        16.505446511638127
+      ],
+      "processed_range": [
+        16.139177212876298,
+        16.70643831036728
+      ],
+      "complete_pages": [
+        2053,
+        2049,
+        2052
+      ],
+      "tokens": [
+        2665461,
+        2678495,
+        2668148
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        }
+      ]
+    },
+    {
+      "settings": {
+        "mode": "single",
+        "concurrency": 64,
+        "capacity": 64,
+        "draft": 8,
+        "batch_tokens": 32768,
+        "prefix": false,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 17.03946058790172,
+      "processed_rate": 17.322895842299303,
+      "completed_range": [
+        16.779610418138926,
+        17.116187503834503
+      ],
+      "processed_range": [
+        17.00050241291696,
+        17.3753969872829
+      ],
+      "complete_pages": [
+        2044,
+        2047,
+        2051
+      ],
+      "tokens": [
+        2703005,
+        2687559,
+        2677871
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        }
+      ]
+    },
+    {
+      "settings": {
+        "mode": "double",
+        "concurrency": 128,
+        "capacity": 128,
+        "draft": 16,
+        "batch_tokens": 32768,
+        "prefix": false,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 13.871913662638613,
+      "processed_rate": 14.116472375594045,
+      "completed_range": [
+        13.521083161335971,
+        14.320910857155429
+      ],
+      "processed_range": [
+        13.772946475125563,
+        14.573385289504888
+      ],
+      "complete_pages": [
+        2042,
+        2042,
+        2040
+      ],
+      "tokens": [
+        3792654,
+        3811233,
+        3810040
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 2341
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 2340
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 2343
+        }
+      ]
+    },
+    {
+      "settings": {
+        "mode": "double",
+        "concurrency": 128,
+        "capacity": 128,
+        "draft": 16,
+        "batch_tokens": 32768,
+        "prefix": true,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 13.857578244206481,
+      "processed_rate": 14.101884226964284,
+      "completed_range": [
+        13.427124064834844,
+        14.14685037641301
+      ],
+      "processed_range": [
+        13.650471529709787,
+        14.375136959504271
+      ],
+      "complete_pages": [
+        2042,
+        2044,
+        2045
+      ],
+      "tokens": [
+        3817020,
+        3819064,
+        3799365
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 2338
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 2342
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 2344
+        }
+      ]
+    },
+    {
+      "settings": {
+        "mode": "double",
+        "concurrency": 128,
+        "capacity": 192,
+        "draft": 16,
+        "batch_tokens": 32768,
+        "prefix": false,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 13.995984844135963,
+      "processed_rate": 14.263686368864409,
+      "completed_range": [
+        13.635665159920789,
+        14.507522594142927
+      ],
+      "processed_range": [
+        13.896474841743698,
+        14.756060670890358
+      ],
+      "complete_pages": [
+        2043,
+        2039,
+        2039
+      ],
+      "tokens": [
+        3791781,
+        3839100,
+        3819316
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 2337
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 2353
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 2343
+        }
+      ]
+    },
+    {
+      "settings": {
+        "mode": "single",
+        "concurrency": 128,
+        "capacity": 128,
+        "draft": 16,
+        "batch_tokens": 32768,
+        "prefix": true,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 17.777170543750234,
+      "processed_rate": 18.011194729357868,
+      "completed_range": [
+        17.63583791664956,
+        17.908738148240406
+      ],
+      "processed_range": [
+        17.876717654047702,
+        18.16220491558983
+      ],
+      "complete_pages": [
+        2049,
+        2051,
+        2050
+      ],
+      "tokens": [
+        2678232,
+        2674047,
+        2680942
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        }
+      ]
+    },
+    {
+      "settings": {
+        "mode": "single",
+        "concurrency": 128,
+        "capacity": 192,
+        "draft": 16,
+        "batch_tokens": 32768,
+        "prefix": false,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 17.419733802275566,
+      "processed_rate": 17.666279571073023,
+      "completed_range": [
+        17.10274000419257,
+        17.97142015619434
+      ],
+      "processed_range": [
+        17.353268422222733,
+        18.225774077389868
+      ],
+      "complete_pages": [
+        2049,
+        2049,
+        2048
+      ],
+      "tokens": [
+        2681005,
+        2673131,
+        2688923
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        }
+      ]
+    },
+    {
+      "settings": {
+        "mode": "triple",
+        "concurrency": 128,
+        "capacity": 192,
+        "draft": 16,
+        "batch_tokens": 32768,
+        "prefix": false,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 12.187296867472998,
+      "processed_rate": 12.396085604801218,
+      "completed_range": [
+        12.009630198553252,
+        12.6213920745905
+      ],
+      "processed_range": [
+        12.23333899636944,
+        12.856496436764244
+      ],
+      "complete_pages": [
+        2043,
+        2040,
+        2040
+      ],
+      "tokens": [
+        4183215,
+        4188764,
+        4191600
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 2078,
+          "crop": 2621
+        },
+        {
+          "fullpage": 2078,
+          "detection": 2078,
+          "crop": 2605
+        },
+        {
+          "fullpage": 2078,
+          "detection": 2078,
+          "crop": 2601
+        }
+      ]
+    },
+    {
+      "settings": {
+        "mode": "single",
+        "concurrency": 256,
+        "capacity": 256,
+        "draft": 16,
+        "batch_tokens": 32768,
+        "prefix": false,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 17.6721021229776,
+      "processed_rate": 17.89601764695295,
+      "completed_range": [
+        17.107707265642375,
+        17.85725949121545
+      ],
+      "processed_range": [
+        17.375276489738443,
+        18.05712176289329
+      ],
+      "complete_pages": [
+        2046,
+        2052,
+        2055
+      ],
+      "tokens": [
+        2683495,
+        2666175,
+        2660412
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        }
+      ]
+    },
+    {
+      "settings": {
+        "mode": "triple",
+        "concurrency": 256,
+        "capacity": 512,
+        "draft": 16,
+        "batch_tokens": 32768,
+        "prefix": false,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 12.648139018891586,
+      "processed_rate": 12.883741608459175,
+      "completed_range": [
+        12.063085322992798,
+        12.983478678422928
+      ],
+      "processed_range": [
+        12.305886745792359,
+        13.199446523367342
+      ],
+      "complete_pages": [
+        2040,
+        2037,
+        2044
+      ],
+      "tokens": [
+        4196553,
+        4211493,
+        4171417
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 2078,
+          "crop": 2604
+        },
+        {
+          "fullpage": 2078,
+          "detection": 2078,
+          "crop": 2609
+        },
+        {
+          "fullpage": 2078,
+          "detection": 2078,
+          "crop": 2611
+        }
+      ]
+    },
+    {
+      "settings": {
+        "mode": "triple",
+        "concurrency": 256,
+        "capacity": 256,
+        "draft": 16,
+        "batch_tokens": 65536,
+        "prefix": true,
+        "cache": 8,
+        "memory": 0.9,
+        "keepalive": "pooled"
+      },
+      "completed_rate": 12.760647624071124,
+      "processed_rate": 12.991977345820576,
+      "completed_range": [
+        12.665496310560572,
+        12.948023577542324
+      ],
+      "processed_range": [
+        12.914083088000426,
+        13.18275011961438
+      ],
+      "complete_pages": [
+        2041,
+        2041,
+        2038
+      ],
+      "tokens": [
+        4192165,
+        4190074,
+        4207913
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 2078,
+          "crop": 2625
+        },
+        {
+          "fullpage": 2078,
+          "detection": 2078,
+          "crop": 2633
+        },
+        {
+          "fullpage": 2078,
+          "detection": 2078,
+          "crop": 2610
+        }
+      ]
+    },
+    {
+      "settings": {
+        "mode": "single",
+        "concurrency": 512,
+        "capacity": 512,
+        "draft": 16,
+        "batch_tokens": 32768,
+        "prefix": false,
+        "cache": 4,
+        "memory": 0.8,
+        "keepalive": 0
+      },
+      "completed_rate": 17.215383924028252,
+      "processed_rate": 17.44201257636797,
+      "completed_range": [
+        16.814386036148,
+        17.33674505992429
+      ],
+      "processed_range": [
+        17.07736763593135,
+        17.590701286388025
+      ],
+      "complete_pages": [
+        2048,
+        2046,
+        2051
+      ],
+      "tokens": [
+        2679913,
+        2697997,
+        2675209
+      ],
+      "requests": [
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "pages": 2078,
+  "gpu": "one NVIDIA H100",
+  "precision": "BF16",
+  "vllm": "0.26.0",
+  "max_model_len": 16384,
+  "max_new_tokens": 8192,
+  "max_num_seqs": 512,
+  "max_num_batched_tokens": 32768,
+  "gpu_memory_utilization": 0.6,
+  "flash_attn_version": 3,
+  "prefix_caching": false,
+  "mm_processor_cache_gb": 0,
+  "frozen_quality": {
+    "max_new_tokens": 8192,
+    "image_resize": false,
+    "chart_recognition": true,
+    "seal_recognition": true,
+    "ocr_for_image_block": true,
+    "format_block_content": true,
+    "merge_layout_blocks": true,
+    "layout_threshold": 0.3,
+    "doc_preprocessing": false
+  },
+  "pipeline": {
+    "workers": 4,
+    "layout_batch": 8,
+    "crop_batch": 8192,
+    "concurrency": 256,
+    "call_batch": 0,
+    "instances": 4
+  },
+  "source_contract_sha256": "ea66b126a579102393d3d6b464e8228b28a735c152324956bcfb037c08cc0617",
+  "vl_weights_sha256": "85a479d506a11e724e7285d395c551be69f41dbc16b6342d3cacfb189aed71db"
+}

@@ -1,0 +1,19 @@
+{
+  "format_version": 1,
+  "training_step": 63000,
+  "architecture": "DFlash2DraftModel",
+  "base_model": "nvidia/Nemotron-3.5-Parse",
+  "target_weights_sha256": "81dd7609c589f3694ce75520c25af5010953231358de6aec4d03e8c6aac787e9",
+  "validated_vllm": "0.32.1rc1.dev505+g00b6c4c56",
+  "maximum_speculative_tokens": 32,
+  "files": {
+    "config.json": {
+      "sha256": "4ce0f96db73ecb33e1c78003dbaebe11efa9032df2699bf50bf3d02ae1a67c36",
+      "bytes": 982
+    },
+    "model.safetensors": {
+      "sha256": "e98d70cf942354e24be04b1440956564fd1193d2b05ac89d52ec283de3c8492c",
+      "bytes": 178657376
+    }
+  }
+}

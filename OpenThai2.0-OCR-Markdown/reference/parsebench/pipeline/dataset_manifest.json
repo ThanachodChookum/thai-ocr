@@ -1,0 +1,54 @@
+{
+  "complete": true,
+  "pages": 2078,
+  "renderer": "PyMuPDF",
+  "renderer_version": "1.26.3",
+  "dpi": 150,
+  "jpeg_quality": 92,
+  "source_page_index": 0,
+  "multi_page_sources": [
+    "docs/text/text_ocr__012-25.pdf"
+  ],
+  "annotations_used_only_for_dataset_preparation_and_scoring": true,
+  "annotation_files": {
+    "chart.jsonl": "82eb2d660b286a5e1b8bd57f3f159a722b13849834561211dc1ccd5c5a39582b",
+    "layout.jsonl": "97ddd0aa9b194a3082fcaa9172b562e32f4e6d1beeaa707a0fb3bf11731e68ef",
+    "table.jsonl": "66129fcc9e68ae0bf40e7d41f540002ceff9bedf46d6dafff2321ba2b7ab5231",
+    "text_content.jsonl": "cb16f70704fce569ee6f9ddff471735b17e3337d56e3958deaa4ebd6f93b5b37",
+    "text_formatting.jsonl": "4f00200322cfe0bb7199f7a0a85e04e9df3964e06882e3703faf40bb1103098d"
+  },
+  "shards": {
+    "part-000000.tar": {
+      "bytes": 182487040,
+      "sha256": "fd24b3ab90bc1da86206a4c08ab2abe819bc7ef2435d289beab63658f8e43661"
+    },
+    "part-000001.tar": {
+      "bytes": 281896960,
+      "sha256": "95d95a38fde449f8ac34907152fd687ec54a710111f590d6cebb42262061eb64"
+    },
+    "part-000002.tar": {
+      "bytes": 159969280,
+      "sha256": "b0ba7687eddaf827171e58bba642c24e1038815c90826a34c6c5146c3ac2062d"
+    },
+    "part-000003.tar": {
+      "bytes": 268451840,
+      "sha256": "c02ebedf648851ff86fe6f4509c9da47930b46def7959d462c1a7596624db976"
+    },
+    "part-000004.tar": {
+      "bytes": 31006720,
+      "sha256": "a19974206b6f178021e16d552a45a6c2919d9fcf32a6ce8f69bcd4dc00dcb724"
+    }
+  },
+  "dataset_repository": "llamaindex/ParseBench",
+  "dataset_revision": "2805a1d940f95a203e0ae4b88be9934f7765b3fc",
+  "parity_with_evaluated_inputs": {
+    "pages": 2078,
+    "image_mismatches": [],
+    "annotation_mismatches": [],
+    "public_dataset_revision": "2805a1d940f95a203e0ae4b88be9934f7765b3fc",
+    "renderer": "PyMuPDF==1.26.3",
+    "dpi": 150,
+    "jpeg_quality": 92,
+    "source_page_index": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "pages": 2078,
+  "failed": 0,
+  "request_wall_s": 672.7415889999829,
+  "pages_per_second": 3.088853185201328,
+  "native_pipeline_seconds": 2690.473514480982,
+  "markdown_seconds": 0.149613827932626,
+  "startup_seconds": 7.9288407219573855,
+  "preload_seconds": 66.59838454495184,
+  "warmup_pages": 16,
+  "decoded_image_bytes": 15561009507,
+  "empty_markdown_pages": 4,
+  "config": {
+    "workers": 4,
+    "layout_batch": 8,
+    "crop_batch": 8192,
+    "concurrency": 256,
+    "call_batch": 0,
+    "instances": 4
+  },
+  "versions": {
+    "paddleocr": "3.7.0",
+    "paddlex": "3.7.2",
+    "paddlepaddle-gpu": "3.3.1",
+    "openai": "2.50.0"
+  },
+  "timing": "preloaded original JPEG decoded BGR arrays; full detection/crop/recognition/assembly/markdown timed; startup, warmup, serialization and disk writes excluded"
+}

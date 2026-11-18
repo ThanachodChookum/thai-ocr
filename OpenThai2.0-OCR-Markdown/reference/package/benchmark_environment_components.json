@@ -1,0 +1,1943 @@
+{
+  "schema_version": 1,
+  "source_lock": "reference/parsebench/pipeline/requirements-scorer-lock.txt",
+  "source_lock_sha256": "db935857d74838c924ef35347182959032ff546ef736249f6b66ea76df27d02f",
+  "component_count": 80,
+  "license_text_location": "THIRD_PARTY_NOTICES.md",
+  "scope": "Pinned optional benchmark environment, distinct from core model runtime dependencies. Evidence for exact published versions; distribution license texts retained verbatim.",
+  "components": [
+    {
+      "name": "aiohappyeyeballs",
+      "version": "2.7.1",
+      "declared_license": "PSF-2.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "e68d1bf48aec9dcc2767343dedec25e12860085cba180e10bc3d3bdd031602ba",
+      "upstream": [
+        "Bug Tracker, https://github.com/aio-libs/aiohappyeyeballs/issues",
+        "Changelog, https://github.com/aio-libs/aiohappyeyeballs/blob/main/CHANGELOG.md",
+        "Documentation, https://aiohappyeyeballs.readthedocs.io",
+        "Repository, https://github.com/aio-libs/aiohappyeyeballs"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 13936,
+          "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "aiohttp",
+      "version": "3.14.3",
+      "declared_license": "Apache-2.0 AND MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "287d4346fb85cdf58dae89ac33639bef485653990a19af9bcd7d39e47e54ea1b",
+      "upstream": [
+        "Homepage, https://github.com/aio-libs/aiohttp",
+        "Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org",
+        "Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org",
+        "CI: GitHub Actions, https://github.com/aio-libs/aiohttp/actions?query=workflow%3ACI",
+        "Coverage: codecov, https://codecov.io/github/aio-libs/aiohttp",
+        "Docs: Changelog, https://docs.aiohttp.org/en/stable/changes.html",
+        "Docs: RTD, https://docs.aiohttp.org",
+        "GitHub: issues, https://github.com/aio-libs/aiohttp/issues",
+        "GitHub: repo, https://github.com/aio-libs/aiohttp"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE.txt",
+          "bytes": 11313,
+          "sha256": "2e4be5fc6c4c72a466fcb665d726e049a6891981fe536c4f04b6366749461d23"
+        },
+        {
+          "path": "licenses/vendor/llhttp/LICENSE",
+          "bytes": 1069,
+          "sha256": "628168d68bb5a8a17e0bbefb3bd74e326e1edc20583d76f52f457c82c921867d"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "aiosignal",
+      "version": "1.4.0",
+      "declared_license": "Apache 2.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "09247ef1da8bc696728d47130e702e4307f6f7d101d6c485bff9f3a71ce7008d",
+      "upstream": [
+        "Chat: Gitter, https://gitter.im/aio-libs/Lobby",
+        "CI: GitHub Actions, https://github.com/aio-libs/aiosignal/actions",
+        "Coverage: codecov, https://codecov.io/github/aio-libs/aiosignal",
+        "Docs: RTD, https://docs.aiosignal.org",
+        "GitHub: issues, https://github.com/aio-libs/aiosignal/issues",
+        "GitHub: repo, https://github.com/aio-libs/aiosignal"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 11332,
+          "sha256": "6fd5243e92dd7f98ec69c7ac377728e74905709ff527a5bf98d6d0263c04f5b6"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "anls_star",
+      "version": "1.0.1",
+      "declared_license": "License :: OSI Approved :: Apache Software License",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "92fe60db1578c6d938561c47d029af59af925cdbbd6ed7cfe997c1720c5c829d",
+      "upstream": [
+        "changelog, https://github.com/deepopinion/anls_star_metric/blob/main/CHANGELOG.md",
+        "issues, https://github.com/deepopinion/anls_star_metric/issues",
+        "paper, https://arxiv.org/abs/2402.03848",
+        "releasenotes, https://github.com/deepopinion/anls_star_metric/releases",
+        "source, https://github.com/deepopinion/anls_star_metric"
+      ],
+      "license_files": [
+        {
+          "path": "anls-star-LICENSE",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      },
+      "upstream_license_fallback": "https://raw.githubusercontent.com/deepopinion/anls_star_metric/f097e5b99a78c9e65d6012d8f4e66c7594cfd077/LICENSE"
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.4",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "22b9b9289b9adf7758daa28a02327e3a129a5415487f01467a3fdd49edd9d535",
+      "upstream": [
+        "Homepage, https://github.com/fastapi/annotated-doc",
+        "Documentation, https://github.com/fastapi/annotated-doc",
+        "Repository, https://github.com/fastapi/annotated-doc",
+        "Issues, https://github.com/fastapi/annotated-doc/issues",
+        "Changelog, https://github.com/fastapi/annotated-doc/release-notes.md"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1086,
+          "sha256": "fff170779a6acbf65abdb405c087f1cee1786691e4a96a4034517e4a504a0cdf"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.7.0",
+      "declared_license": "License :: OSI Approved :: MIT License",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "ee5b6ac64b09274c026051813484025939564067801f485115d9cadc207cf791",
+      "upstream": [
+        "Homepage, https://github.com/annotated-types/annotated-types",
+        "Source, https://github.com/annotated-types/annotated-types",
+        "Changelog, https://github.com/annotated-types/annotated-types/releases"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1083,
+          "sha256": "fe1049884b1a0d9342901e88e07f32925d24b3121d9972b6a6805fb9824b095d"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "anyio",
+      "version": "4.12.1",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "0df88369bf539a671fcbcd3694e2d33041c94128643926e8a42c2a0986cbb899",
+      "upstream": [
+        "Documentation, https://anyio.readthedocs.io/en/latest/",
+        "Changelog, https://anyio.readthedocs.io/en/stable/versionhistory.html",
+        "Source code, https://github.com/agronholm/anyio",
+        "Issue tracker, https://github.com/agronholm/anyio/issues"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1081,
+          "sha256": "5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "apted",
+      "version": "1.0.3",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "67ce40e1f7d30b3eb107d401648b49e6e0cd58784313c89686227367b4505ef2",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1088,
+          "sha256": "424d0a64c31453c7ceccb775371a107a9c39a9b6ac31ec55e2051101ddfdb179"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "attrs",
+      "version": "25.4.0",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "d917abc63eda81c311c62c1d92dea50b682ea870269062821f5de75962bb6684",
+      "upstream": [
+        "Documentation, https://www.attrs.org/",
+        "Changelog, https://www.attrs.org/en/stable/changelog.html",
+        "GitHub, https://github.com/python-attrs/attrs",
+        "Funding, https://github.com/sponsors/hynek",
+        "Tidelift, https://tidelift.com/subscription/pkg/pypi-attrs?utm_source=pypi-attrs&utm_medium=pypi"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1109,
+          "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "autoevals",
+      "version": "0.1.0",
+      "declared_license": "",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "1476bab18db54f7e19057473834c7810f35454582e6bbd86c1cca4c789a04f5a",
+      "upstream": [
+        "Bug Tracker, https://github.com/braintrustdata/autoevals"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1072,
+          "sha256": "63acc1a22bf0cd417131aef4e16ba63f71c43b3c578969c7255bc54457ae8661"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "beautifulsoup4",
+      "version": "4.14.3",
+      "declared_license": "MIT License",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "01cf77bc0f17a7d16d80e70a5c533c1127d5773b629947c9dd652956584ab6c6",
+      "upstream": [
+        "Download, https://www.crummy.com/software/BeautifulSoup/bs4/download/",
+        "Homepage, https://www.crummy.com/software/BeautifulSoup/bs4/"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/AUTHORS",
+          "bytes": 2201,
+          "sha256": "b989238918e1fdac1e46717cb405b63e92497a272413af0d989c1df6c8abcb6f"
+        },
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1441,
+          "sha256": "55b4d8d4b1e5bc86d10efac91b74c87bcb77526b0f5b9edaf8b9cd2adc7397b2"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "bleach",
+      "version": "6.3.0",
+      "declared_license": "Apache Software License",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "6e956dad47551c6a6121d444df72d0fa16e1f0cc9c75da5b6166186413b04702",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 569,
+          "sha256": "bec2238c149a632b8fb26813f687aceabab80327f3270769c2c16157883d3130"
+        },
+        {
+          "path": "licenses/bleach/_vendor/html5lib-1.1.dist-info/LICENSE",
+          "bytes": 1084,
+          "sha256": "16a39991619e92f18680932da2a9199fdf7d95df3ecaedc52ea06218aabafd6f"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "certifi",
+      "version": "2026.2.25",
+      "declared_license": "MPL-2.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "e0d32e197760fe1062440de968a55761c0e61375571015b14ef08bdb1943c8f5",
+      "upstream": [
+        "Source, https://github.com/certifi/python-certifi"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 989,
+          "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.1",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "955c93827d59f1280f6d6a76b1e11bfb999cc65a55df83a6f9b28b7bc0e467f6",
+      "upstream": [
+        "Changelog, https://github.com/jawah/charset_normalizer/blob/master/CHANGELOG.md",
+        "Documentation, https://charset-normalizer.readthedocs.io/",
+        "Code, https://github.com/jawah/charset_normalizer",
+        "Issue tracker, https://github.com/jawah/charset_normalizer/issues"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1071,
+          "sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "chevron",
+      "version": "0.14.0",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "b299009617a34919f4b33d8a4e65f77940bc24c91a9ab8c3465d4167c4a99213",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1081,
+          "sha256": "0f176677152475ebab7a0feaacc7536b649bb6d2c8a9bf91a953d3d93a10172b"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "click",
+      "version": "8.3.1",
+      "declared_license": "BSD-3-Clause",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "5d9781acc004d2085313cf128dfad20ee4b2342a413e9971251d6d6f00fda198",
+      "upstream": [
+        "Changes, https://click.palletsprojects.com/page/changes/",
+        "Chat, https://discord.gg/pallets",
+        "Documentation, https://click.palletsprojects.com/",
+        "Donate, https://palletsprojects.com/donate",
+        "Source, https://github.com/pallets/click/"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE.txt",
+          "bytes": 1475,
+          "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "distro",
+      "version": "1.9.0",
+      "declared_license": "Apache License, Version 2.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "31632ab2de5591131091b3397bdcdf797718579d85a75186f06839dd0c09e81d",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "bytes": 11325,
+          "sha256": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "filelock",
+      "version": "3.25.2",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "08788fe5b29c21352b7432a67c2bccb2911d2948f9bee3eadee765e49037623e",
+      "upstream": [
+        "Documentation, https://py-filelock.readthedocs.io",
+        "Homepage, https://github.com/tox-dev/py-filelock",
+        "Source, https://github.com/tox-dev/py-filelock",
+        "Tracker, https://github.com/tox-dev/py-filelock/issues"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1088,
+          "sha256": "608c89d5060ae9921adccf3236695bc654a9946e12323ef6c021dfa04e294d48"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "fire",
+      "version": "0.7.1",
+      "declared_license": "Apache-2.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "fd4cf680aadcfa80f49825bcb39bd41a8fd84c4928e5325d943a4b4f0909eebe",
+      "upstream": [
+        "Homepage, https://github.com/google/python-fire",
+        "Repository, https://github.com/google/python-fire"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 573,
+          "sha256": "a5de77b62266bca0bb97bf058992f0b0f308a83a8ca55ee10fbf6bd8ed8f7ed0"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "frozenlist",
+      "version": "1.8.0",
+      "declared_license": "Apache-2.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "946c22dc9f7e2c76f2d698f00a4306dbe49a820e2b3f1a0e22fe5286cbec35f1",
+      "upstream": [
+        "Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org",
+        "Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org",
+        "CI: Github Actions, https://github.com/aio-libs/frozenlist/actions",
+        "Code of Conduct, https://github.com/aio-libs/.github/blob/master/CODE_OF_CONDUCT.md",
+        "Coverage: codecov, https://codecov.io/github/aio-libs/frozenlist",
+        "Docs: Changelog, https://github.com/aio-libs/frozenlist/blob/master/CHANGES.rst#changelog",
+        "Docs: RTD, https://frozenlist.aio-libs.org",
+        "GitHub: issues, https://github.com/aio-libs/frozenlist/issues",
+        "GitHub: repo, https://github.com/aio-libs/frozenlist"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 11332,
+          "sha256": "6fd5243e92dd7f98ec69c7ac377728e74905709ff527a5bf98d6d0263c04f5b6"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.2.0",
+      "declared_license": "BSD-3-Clause",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "3f0e9085bc977a0f9e95bd21a563e2411a4078c0ff02927dbdd345a180a7acfb",
+      "upstream": [
+        "Changelog, https://filesystem-spec.readthedocs.io/en/latest/changelog.html",
+        "Documentation, https://filesystem-spec.readthedocs.io/en/latest/",
+        "Homepage, https://github.com/fsspec/filesystem_spec"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1513,
+          "sha256": "2dc35496ce53a7307915c008a844aad53e772b49b34cdd00445067691407ec94"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "fuzzysearch",
+      "version": "0.8.1",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "f784460d6243d17c642c1d84544be18c6cef7fb7bc7f6078e48f1e07c3d240a5",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "AUTHORS.rst",
+          "bytes": 152,
+          "sha256": "78e12a7f077269fea2b2a21735df4b6ab39af1675256fe4666c196f5cb619b5d"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1080,
+          "sha256": "ebe3ba5366e87bafafb60a46578ea519a7cde2759879631961e78aafa2b9adaf"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "28f326098ac09fcba79b8f180f96087c841fe2456215cb7b872a9c7d5cd19d64",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE.txt",
+          "bytes": 1124,
+          "sha256": "37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.4.2",
+      "declared_license": "Apache-2.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "aa7df944d3798a9168295c96ce9dc3c52c5a162e18cdf040ac15733b776d35dc",
+      "upstream": [
+        "Documentation, https://huggingface.co/docs/hub/xet/index",
+        "Homepage, https://github.com/huggingface/xet-core",
+        "Issues, https://github.com/huggingface/xet-core/issues",
+        "Repository, https://github.com/huggingface/xet-core.git"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "html5lib",
+      "version": "1.1",
+      "declared_license": "MIT License",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "637c3e9ddff6d87427411cb7cb2a55b15fe47b6145f78b940f8faf1a97360e72",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "AUTHORS.rst",
+          "bytes": 983,
+          "sha256": "0eb3403227e80e9b90c899fe296f87e8af13b766b9aca9d5d94178f8346b1942"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1084,
+          "sha256": "16a39991619e92f18680932da2a9199fdf7d95df3ecaedc52ea06218aabafd6f"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "declared_license": "BSD-3-Clause",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "fe2d4fda6199128978779e0cf27f3c045c531863fcdd987eacc74f3a18d41c21",
+      "upstream": [
+        "Documentation, https://www.encode.io/httpcore",
+        "Homepage, https://www.encode.io/httpcore/",
+        "Source, https://github.com/encode/httpcore"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE.md",
+          "bytes": 1518,
+          "sha256": "fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "declared_license": "BSD-3-Clause",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "febb9b0f8f3e80d57c8199c304f35c4336e8581d1d18d7983c92766b82793b25",
+      "upstream": [
+        "Changelog, https://github.com/encode/httpx/blob/master/CHANGELOG.md",
+        "Documentation, https://www.python-httpx.org",
+        "Homepage, https://github.com/encode/httpx",
+        "Source, https://github.com/encode/httpx"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE.md",
+          "bytes": 1508,
+          "sha256": "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d"
+        }
+      ],
+      "source_distribution": {
+        "filename": "httpx-0.28.1-py3-none-any.whl",
+        "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad"
+      }
+    },
+    {
+      "name": "huggingface_hub",
+      "version": "1.7.1",
+      "declared_license": "Apache-2.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "d0bd19bb0e8f3b66f871f4d3cb79a1c5539e6e431be6bbc633dade8176653044",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "idna",
+      "version": "3.11",
+      "declared_license": "BSD-3-Clause",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "7c2c12c30f52ba237c4c81e59454804944025b9e6102cf1dcca9ebf5168411b0",
+      "upstream": [
+        "Changelog, https://github.com/kjd/idna/blob/master/HISTORY.rst",
+        "Issue tracker, https://github.com/kjd/idna/issues",
+        "Source, https://github.com/kjd/idna"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE.md",
+          "bytes": 1541,
+          "sha256": "b7a336abf3b04e180ec065cdd16e705d079e1cc7a14f910aa6e9187f36b9cd87"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "joblib",
+      "version": "1.5.2",
+      "declared_license": "BSD 3-Clause",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "cf385b71bfce1aa630dedb3b3749e841826a5cb8ee15c5e75e06dadfacc44a3d",
+      "upstream": [
+        "Homepage, https://joblib.readthedocs.io",
+        "Source, https://github.com/joblib/joblib"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE.txt",
+          "bytes": 1527,
+          "sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a"
+        }
+      ],
+      "source_distribution": {
+        "filename": "joblib-1.5.2-py3-none-any.whl",
+        "sha256": "4e1f0bdbb987e6d843c70cf43714cb276623def372df3c22fe5266b2670bc241"
+      }
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "05b189866ca98a96da3934bf6b83687ced3ff85325273b77e16b705f6d8b26d2",
+      "upstream": [
+        "Homepage, https://github.com/python-jsonschema/jsonschema",
+        "Documentation, https://python-jsonschema.readthedocs.io/",
+        "Issues, https://github.com/python-jsonschema/jsonschema/issues/",
+        "Funding, https://github.com/sponsors/Julian",
+        "Tidelift, https://tidelift.com/subscription/pkg/pypi-jsonschema?utm_source=pypi-jsonschema&utm_medium=referral&utm_campaign=pypi-link",
+        "Changelog, https://github.com/python-jsonschema/jsonschema/blob/main/CHANGELOG.rst",
+        "Source, https://github.com/python-jsonschema/jsonschema"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/COPYING",
+          "bytes": 1057,
+          "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "35abd41757f32b4ea24756920ded47b70173d77cbc052a5a6d3ab583b2e8d89d",
+      "upstream": [
+        "Documentation, https://jsonschema-specifications.readthedocs.io/",
+        "Homepage, https://github.com/python-jsonschema/jsonschema-specifications",
+        "Issues, https://github.com/python-jsonschema/jsonschema-specifications/issues/",
+        "Funding, https://github.com/sponsors/Julian",
+        "Tidelift, https://tidelift.com/subscription/pkg/pypi-jsonschema-specifications?utm_source=pypi-jsonschema-specifications&utm_medium=referral&utm_campaign=pypi-link",
+        "Source, https://github.com/python-jsonschema/jsonschema-specifications"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/COPYING",
+          "bytes": 1057,
+          "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "Levenshtein",
+      "version": "0.27.3",
+      "declared_license": "GPL-2.0-or-later",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "f757a1d62b976c1dd2e551800156bf9ebc7954de406911405c65653326e4ee7a",
+      "upstream": [
+        "Homepage, https://github.com/rapidfuzz/Levenshtein",
+        "Documentation, https://rapidfuzz.github.io/Levenshtein/",
+        "Repository, https://github.com/rapidfuzz/Levenshtein.git",
+        "Issues, https://github.com/rapidfuzz/Levenshtein/issues",
+        "Changelog, https://github.com/rapidfuzz/Levenshtein/blob/main/HISTORY.md"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 16004,
+          "sha256": "00c45b5cb10b85516da33dacfdaa27e74ef5626268385ca3e78da1825b2b750b"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "llama_cloud",
+      "version": "1.6.0",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "9ccf1745b72a109e9d4cccce69af1f67331b5320d69cf06c0d56f5de4a5e8a71",
+      "upstream": [
+        "Homepage, https://github.com/run-llama/llama-cloud-py",
+        "Repository, https://github.com/run-llama/llama-cloud-py"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1051,
+          "sha256": "b762c1a8ddcf579857d4b3ebd71a956443276f06572aef8f75bb5f10a697894f"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "lxml",
+      "version": "6.0.2",
+      "declared_license": "BSD-3-Clause",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "d2a20793094d4d3333e3e7397bc6676db1a0b7fbe96191c2128a97c9c911f794",
+      "upstream": [
+        "Source, https://github.com/lxml/lxml",
+        "Bug Tracker, https://bugs.launchpad.net/lxml"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE.txt",
+          "bytes": 1507,
+          "sha256": "8fc2b568133516e46845d2147917adeee1648e70ae9ab5ed6c5417afef4ce855"
+        },
+        {
+          "path": "licenses/LICENSES.txt",
+          "bytes": 1514,
+          "sha256": "41d49dd406aa0e1548a6d5f21a30d6bf638b3cd96eb7289dd348d83ed2e40392"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "Markdown",
+      "version": "3.10.2",
+      "declared_license": "BSD-3-Clause",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "d3ea71b57cc1a86a6a15eae20a03e0f4f73cbdb41278d8d0b641462be3e28085",
+      "upstream": [
+        "Homepage, https://Python-Markdown.github.io/",
+        "Documentation, https://Python-Markdown.github.io/",
+        "Repository, https://github.com/Python-Markdown/markdown",
+        "Issue Tracker, https://github.com/Python-Markdown/markdown/issues",
+        "Changelog, https://python-markdown.github.io/changelog/"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE.md",
+          "bytes": 1650,
+          "sha256": "7ba4eb6d10b32b2d11dce13821340351cdbbb30ba8ccc67841db2ffd86e79aca"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "markdown-it-py",
+      "version": "4.0.0",
+      "declared_license": "License :: OSI Approved :: MIT License",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "e9fcaa1e2daf3f96d840a09fbaaa394feaadf37a36d88a7b6b6b672487c65bfb",
+      "upstream": [
+        "Documentation, https://markdown-it-py.readthedocs.io",
+        "Homepage, https://github.com/executablebooks/markdown-it-py"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1078,
+          "sha256": "4a2260d6e2cd0f5a151a1e86dbfe7d3ed552b1e2beabf9941c1ba5c49cbce484"
+        },
+        {
+          "path": "licenses/LICENSE.markdown-it",
+          "bytes": 1073,
+          "sha256": "792c48c5a849a15fdf9e37e8bcf9e6d1dd13b32b46c642a748a0a46a9919d473"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "markdown2",
+      "version": "2.5.5",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "6e7fc0af171930b9347d2d66e19e5f7f10afa009345aa196a1a2253f4257cb72",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "LICENSE.txt",
+          "bytes": 2313,
+          "sha256": "f8c7c4d554409cf621b8d653dbfffb719745fd36f5c49b8305258649b403ef9c"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "mdurl",
+      "version": "0.1.2",
+      "declared_license": "License :: OSI Approved :: MIT License",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "b53b29d48f499367053fda3c81e7ce27d2558380ebbf83e66023b02eb7ddd25d",
+      "upstream": [
+        "Homepage, https://github.com/executablebooks/mdurl"
+      ],
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "bytes": 2338,
+          "sha256": "7c605df6e28667a9603118e98274f64a49ce3eed0d26fccce9534a345e0ef955"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "multidict",
+      "version": "6.9.1",
+      "declared_license": "Apache License 2.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "b52756a8e05f6cf5e429cb0133ea395f252aee4a30b748506dd354a5ad2d4af2",
+      "upstream": [
+        "Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org",
+        "Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org",
+        "CI: GitHub, https://github.com/aio-libs/multidict/actions",
+        "Code of Conduct, https://github.com/aio-libs/.github/blob/master/CODE_OF_CONDUCT.md",
+        "Coverage: codecov, https://codecov.io/github/aio-libs/multidict",
+        "Docs: Changelog, https://multidict.aio-libs.org/en/latest/changes/",
+        "Docs: RTD, https://multidict.aio-libs.org",
+        "GitHub: issues, https://github.com/aio-libs/multidict/issues",
+        "GitHub: repo, https://github.com/aio-libs/multidict"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 11313,
+          "sha256": "2e4be5fc6c4c72a466fcb665d726e049a6891981fe536c4f04b6366749461d23"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "munkres",
+      "version": "1.1.4",
+      "declared_license": "Apache Software License",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "f2afbf2cfc182e56cb1f5b431d1621b9c893eb97c316fe48aac4eb8d1b68e6ed",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 565,
+          "sha256": "5e146a6732ad1351686c5eca491bf569065462a0cdd44157bb2e65cd4eadb75d"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.3",
+      "declared_license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "621bf875d57eee8673f39344ea98ddc370e944e9c8c36b38b430e290f2b682cf",
+      "upstream": [
+        "homepage, https://numpy.org",
+        "documentation, https://numpy.org/doc/",
+        "source, https://github.com/numpy/numpy",
+        "download, https://pypi.org/project/numpy/#files",
+        "tracker, https://github.com/numpy/numpy/issues",
+        "release notes, https://numpy.org/doc/stable/release"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE.txt",
+          "bytes": 46794,
+          "sha256": "4860083caa0de2ac3292ca98bd074bd8f45d8b32624e37b1e70a240bff61e488"
+        },
+        {
+          "path": "licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+          "bytes": 1018,
+          "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+        },
+        {
+          "path": "licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+          "bytes": 690,
+          "sha256": "3f2c1ffa76383a55ae0aac01c9737cd70050dff63e1f026694fbe9d662573c98"
+        },
+        {
+          "path": "licenses/numpy/_core/src/highway/LICENSE",
+          "bytes": 20785,
+          "sha256": "e340270d4f64384569a91d546acb5b094d69ce47f0c015db77abb74dc6f815af"
+        },
+        {
+          "path": "licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+          "bytes": 1414,
+          "sha256": "f7b14309e5f54e5022b26448eefd419988ada2aec01d3c1162d84a0ea8f21f2c"
+        },
+        {
+          "path": "licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+          "bytes": 1514,
+          "sha256": "211e7d737d6179a08f791ebb0a99897ce7cd2457410c542876d125576edfe910"
+        },
+        {
+          "path": "licenses/numpy/_core/src/umath/svml/LICENSE",
+          "bytes": 1543,
+          "sha256": "c17011467b4fe6e20fbfbeda4df09e58c2bca5480a063e55735a4000a379aad9"
+        },
+        {
+          "path": "licenses/numpy/fft/pocketfft/LICENSE.md",
+          "bytes": 1498,
+          "sha256": "a85ca13fdf90160b64a0698215868c13b74d835ad0a4e2ba44713b8c5058a056"
+        },
+        {
+          "path": "licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+          "bytes": 2266,
+          "sha256": "a14cc25e10d40a3aa705b7de2fb764a6535d8ee9b2db4e1724900585457dfd55"
+        },
+        {
+          "path": "licenses/numpy/ma/LICENSE",
+          "bytes": 1593,
+          "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6"
+        },
+        {
+          "path": "licenses/numpy/random/LICENSE.md",
+          "bytes": 3511,
+          "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+        },
+        {
+          "path": "licenses/numpy/random/src/distributions/LICENSE.md",
+          "bytes": 2745,
+          "sha256": "469778be8f33d54e1bcaab28c281cc472916d2d273f835e55bc487d30503face"
+        },
+        {
+          "path": "licenses/numpy/random/src/mt19937/LICENSE.md",
+          "bytes": 2926,
+          "sha256": "0e111337b25494a773106695f0e799f642b8567aaacca4f116a74a8177179156"
+        },
+        {
+          "path": "licenses/numpy/random/src/pcg64/LICENSE.md",
+          "bytes": 1154,
+          "sha256": "e7d4f4fb20358f314210a892ae17351e04993813646f697ec387385ca2a36918"
+        },
+        {
+          "path": "licenses/numpy/random/src/philox/LICENSE.md",
+          "bytes": 1509,
+          "sha256": "6f5828a57223d4cc7f8ea505a2623e7b978b242752c1515e355f46ba2cec1800"
+        },
+        {
+          "path": "licenses/numpy/random/src/sfc64/LICENSE.md",
+          "bytes": 1226,
+          "sha256": "9d4098846018319cd68e228ee6220361787f73bccbf00237a85e4fc9621b998f"
+        },
+        {
+          "path": "licenses/numpy/random/src/splitmix64/LICENSE.md",
+          "bytes": 332,
+          "sha256": "268b0ca06759d31ea3ca68dd35f20e877916e927b1c2a835e4592a3c4354b1f9"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "packaging",
+      "version": "26.0",
+      "declared_license": "Apache-2.0 OR BSD-2-Clause",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "3362bb7d6a26da2962ba8daaa4785cd0bacac21aba908a1195cc8f59580a265a",
+      "upstream": [
+        "Documentation, https://packaging.pypa.io/",
+        "Source, https://github.com/pypa/packaging"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 197,
+          "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+        },
+        {
+          "path": "licenses/LICENSE.APACHE",
+          "bytes": 10174,
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+        },
+        {
+          "path": "licenses/LICENSE.BSD",
+          "bytes": 1344,
+          "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "pandas",
+      "version": "3.0.1",
+      "declared_license": "License :: OSI Approved :: BSD License",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "f97c1f520542961f8f6e5b643c5c28be3f365399ff28b218ba56f7957f51e433",
+      "upstream": [
+        "homepage, https://pandas.pydata.org",
+        "documentation, https://pandas.pydata.org/docs/",
+        "repository, https://github.com/pandas-dev/pandas"
+      ],
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "bytes": 52127,
+          "sha256": "5c1052e921e62d36ccda50a61585e9c0444b80c62f39b57c4f3f0d5fb62f5071"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "parse-bench",
+      "version": "1.0.4",
+      "declared_license": "Apache-2.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "e2d5b4a0ef8eea0e98844ab152799a2b29b6d107bcded1b85d20b26db89a2ae4",
+      "upstream": [
+        "Homepage, https://parsebench.ai",
+        "Repository, https://github.com/run-llama/ParseBench",
+        "Issues, https://github.com/run-llama/ParseBench/issues",
+        "Dataset, https://huggingface.co/datasets/llamaindex/ParseBench",
+        "Paper, https://arxiv.org/abs/2604.08538",
+        "Changelog, https://github.com/run-llama/ParseBench/blob/main/CHANGELOG.md"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "pdf2image",
+      "version": "1.16.3",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "8646d128a2062e340501aa3cc3ff500ea0a549a239025590c7f4be15677bfcd0",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1071,
+          "sha256": "6451a49275ddf393b9e113e70cdc358db35e4356c97fd9688183e49bc8e24409"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "pillow",
+      "version": "11.1.0",
+      "declared_license": "MIT-CMU",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "508225fbe42f79db4d07b4522a17dce5be96d61b6ba9aec969da98c78b0546b0",
+      "upstream": [
+        "Changelog, https://github.com/python-pillow/Pillow/releases",
+        "Documentation, https://pillow.readthedocs.io",
+        "Funding, https://tidelift.com/subscription/pkg/pypi-pillow?utm_source=pypi-pillow&utm_medium=pypi",
+        "Homepage, https://python-pillow.github.io",
+        "Mastodon, https://fosstodon.org/@pillow",
+        "Release notes, https://pillow.readthedocs.io/en/stable/releasenotes/index.html",
+        "Source, https://github.com/python-pillow/Pillow"
+      ],
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "bytes": 60071,
+          "sha256": "f576d3937d21161eac59b0b6f7807a2f5f30fe77d72abfe0d5b4d8e939b31288"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "polyleven",
+      "version": "0.11.0",
+      "declared_license": "",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "004ecc8e83db3e55f8be9b44885564d19cee39501fe5f704bb5d19caf922891f",
+      "upstream": [
+        "github, https://github.com/fujimotos/polyleven"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1373,
+          "sha256": "9d33f6de6fd4fdd95df8f56972b8f7f2574c014698392fb0faa7bc5170de64f4"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "propcache",
+      "version": "0.5.4",
+      "declared_license": "Apache-2.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "6ed3bac0ad43050ceaf8bd09878ba3d673c94c4da0d4498f903f86c36cc6fb57",
+      "upstream": [
+        "Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org",
+        "Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org",
+        "CI: GitHub Workflows, https://github.com/aio-libs/propcache/actions?query=branch:master",
+        "Code of Conduct, https://github.com/aio-libs/.github/blob/master/CODE_OF_CONDUCT.md",
+        "Coverage: codecov, https://codecov.io/github/aio-libs/propcache",
+        "Docs: Changelog, https://propcache.readthedocs.io/en/latest/changes/",
+        "Docs: RTD, https://propcache.readthedocs.io",
+        "GitHub: issues, https://github.com/aio-libs/propcache/issues",
+        "GitHub: repo, https://github.com/aio-libs/propcache"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "licenses/NOTICE",
+          "bytes": 609,
+          "sha256": "56d6ac6c8105c0a51304c21db060e361af9a8ea0af9a75c239c28b5d13693838"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "pydantic",
+      "version": "2.12.5",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "a3ba23e895191fed69b8323cbcbcdc82984ca0b6a3cdc62c48a2341886a9c08d",
+      "upstream": [
+        "Homepage, https://github.com/pydantic/pydantic",
+        "Documentation, https://docs.pydantic.dev",
+        "Funding, https://github.com/sponsors/samuelcolvin",
+        "Source, https://github.com/pydantic/pydantic",
+        "Changelog, https://docs.pydantic.dev/latest/changelog/"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1129,
+          "sha256": "a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.41.5",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "09f83baa3202ec3da98a284a56afdf1ba69976e4af7172488887e5b2b20591a9",
+      "upstream": [
+        "Homepage, https://github.com/pydantic/pydantic-core",
+        "Funding, https://github.com/sponsors/samuelcolvin",
+        "Source, https://github.com/pydantic/pydantic-core"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1080,
+          "sha256": "2afdd30d54b4d62b6f488a6bcc1546e84ec5061f13f4209c03d012348783795a"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "Pygments",
+      "version": "2.19.2",
+      "declared_license": "BSD-2-Clause",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "7ae100d67d67006c6479803dd835fcf47a9b59fac794441ea8e66aa7f5984d82",
+      "upstream": [
+        "Homepage, https://pygments.org",
+        "Documentation, https://pygments.org/docs",
+        "Source, https://github.com/pygments/pygments",
+        "Bug Tracker, https://github.com/pygments/pygments/issues",
+        "Changelog, https://github.com/pygments/pygments/blob/master/CHANGES"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/AUTHORS",
+          "bytes": 10824,
+          "sha256": "0660e318a6f215802adc8731ab85d0c65ff27cfcca3f5d28597f306476195bd9"
+        },
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1331,
+          "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "pymupdf",
+      "version": "1.26.3",
+      "declared_license": "Dual Licensed - GNU AFFERO GPL 3.0 or Artifex Commercial License",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "7be05c4754216ad0600ae02a1262f264675757b05879fecb1b48565528c57eae",
+      "upstream": [
+        "Documentation, https://pymupdf.readthedocs.io/",
+        "Source, https://github.com/pymupdf/pymupdf",
+        "Tracker, https://github.com/pymupdf/PyMuPDF/issues",
+        "Changelog, https://pymupdf.readthedocs.io/en/latest/changes.html"
+      ],
+      "license_files": [
+        {
+          "path": "COPYING",
+          "bytes": 64,
+          "sha256": "40e60697600535eabfb5ae05f72829d88cfe8d02dd4792f5a754f6f51dabe55b"
+        }
+      ],
+      "source_distribution": {
+        "filename": "pymupdf-1.26.3-cp39-abi3-manylinux_2_28_x86_64.whl",
+        "sha256": "454f38c8cf07eb333eb4646dca10517b6e90f57ce2daa2265a78064109d85555"
+      }
+    },
+    {
+      "name": "pypdf",
+      "version": "6.8.0",
+      "declared_license": "BSD-3-Clause",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "6212555075c59600c75d9fdf0fd3051d006f25c24adef723376080d68d4631f7",
+      "upstream": [
+        "Bug Reports, https://github.com/py-pdf/pypdf/issues",
+        "Changelog, https://pypdf.readthedocs.io/en/latest/meta/CHANGELOG.html",
+        "Documentation, https://pypdf.readthedocs.io/en/latest/",
+        "Source, https://github.com/py-pdf/pypdf"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1605,
+          "sha256": "a97ac230e5f33ef10a5367a850eb01f91f1a0b064e34742c7794d2294557f524"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "pytesseract",
+      "version": "0.3.13",
+      "declared_license": "Apache License 2.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "50fd3f9954ebb0dcdbdd4f8caa1dbd3d9b0a240f346a1a24d01fcf8b17b95850",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "declared_license": "Dual License",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "a9d436da322be808332f98d88325998e87cb693a678a9969feb4cfad729a6e93",
+      "upstream": [
+        "Documentation, https://dateutil.readthedocs.io/en/stable/",
+        "Source, https://github.com/dateutil/dateutil"
+      ],
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "bytes": 2889,
+          "sha256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "python-dotenv",
+      "version": "1.2.2",
+      "declared_license": "BSD-3-Clause",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "59430a9dee8f8118dbf693e41c4a3e5150626d19901f4727503da9499f5a64a1",
+      "upstream": [
+        "Source, https://github.com/theskumar/python-dotenv"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1556,
+          "sha256": "80619b7049f08c81683ad0e01f08f257a840652dd71ee83146d36658c7d2c2b9"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "python-Levenshtein",
+      "version": "0.27.3",
+      "declared_license": "GPL-2.0-or-later",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "9d6c51345fb8341dc7f54a3f38cee292bdea3c8c507de08412e5e29a9e5c935e",
+      "upstream": [
+        "Homepage, https://github.com/rapidfuzz/python-Levenshtein",
+        "Documentation, https://rapidfuzz.github.io/Levenshtein/",
+        "Repository, https://github.com/rapidfuzz/python-Levenshtein.git",
+        "Issues, https://github.com/rapidfuzz/python-Levenshtein/issues",
+        "Changelog, https://github.com/rapidfuzz/python-Levenshtein/blob/main/CHANGELOG.rst"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 18085,
+          "sha256": "87f1bd4a52b4029476b684fcdd51fed3c6b2540e462d3c2d3bfc9be4558b2825"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "03c3b415ed38d09faedc49360e930769b40c58f68585e6de00e2e4916a858d34",
+      "upstream": [
+        "Bug Tracker, https://github.com/yaml/pyyaml/issues",
+        "CI, https://github.com/yaml/pyyaml/actions",
+        "Documentation, https://pyyaml.org/wiki/PyYAMLDocumentation",
+        "Mailing lists, http://lists.sourceforge.net/lists/listinfo/yaml-core",
+        "Source Code, https://github.com/yaml/pyyaml"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1101,
+          "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "RapidFuzz",
+      "version": "3.14.3",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "998dc08e2440236788d9422b6e5f726c380839ae9c0e6d8996d1376cdc528e2c",
+      "upstream": [
+        "Homepage, https://github.com/rapidfuzz/RapidFuzz",
+        "Documentation, https://rapidfuzz.github.io/RapidFuzz/",
+        "Repository, https://github.com/rapidfuzz/RapidFuzz.git",
+        "Issues, https://github.com/rapidfuzz/RapidFuzz/issues",
+        "Changelog, https://github.com/rapidfuzz/RapidFuzz/blob/main/CHANGELOG.rst"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1092,
+          "sha256": "f34ccdffdff56fc417785915eedf18601d5479755df3c472b2c754c29802d683"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "c93b00e6ab1524fd60848376604c189a114374776475c25a31d57be47b29de6a",
+      "upstream": [
+        "Documentation, https://referencing.readthedocs.io/",
+        "Homepage, https://github.com/python-jsonschema/referencing",
+        "Issues, https://github.com/python-jsonschema/referencing/issues/",
+        "Funding, https://github.com/sponsors/Julian",
+        "Tidelift, https://tidelift.com/subscription/pkg/pypi-referencing?utm_source=pypi-referencing&utm_medium=referral&utm_campaign=pypi-link",
+        "Changelog, https://referencing.readthedocs.io/en/stable/changes/",
+        "Source, https://github.com/python-jsonschema/referencing"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/COPYING",
+          "bytes": 1057,
+          "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2",
+      "declared_license": "Apache-2.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "8c384ba3e979480faae2859d3c5e6c1276dd2c3616e322e124d52c8cfc556f27",
+      "upstream": [
+        "Documentation, https://requests.readthedocs.io",
+        "Source, https://github.com/psf/requests"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 10142,
+          "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+        },
+        {
+          "path": "licenses/NOTICE",
+          "bytes": 38,
+          "sha256": "f5110972dedad2b4e9d314518daf3b7d72d6e02e499acd802181de6f74571dcc"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "rich",
+      "version": "14.3.3",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "f643a724f7a397abd3c1abe5df9a93266b4abb6d7ca7d39bfb3fa30e8cf5013a",
+      "upstream": [
+        "Documentation, https://rich.readthedocs.io/en/latest/",
+        "Homepage, https://github.com/Textualize/rich"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1056,
+          "sha256": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "rpds-py",
+      "version": "0.30.0",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "cc01d097ddb9c7e07a29c9553ee8dd35cf920e85fb574f7b0c23d68138a716bf",
+      "upstream": [
+        "Documentation, https://rpds.readthedocs.io/",
+        "Homepage, https://github.com/crate-py/rpds",
+        "Issues, https://github.com/crate-py/rpds/issues/",
+        "Funding, https://github.com/sponsors/Julian",
+        "Tidelift, https://tidelift.com/subscription/pkg/pypi-rpds-py?utm_source=pypi-rpds-py&utm_medium=referral&utm_campaign=pypi-link",
+        "Source, https://github.com/crate-py/rpds",
+        "Upstream, https://github.com/orium/rpds"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1057,
+          "sha256": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.7.2",
+      "declared_license": "BSD-3-Clause",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "a301770d816e5ef5e2a262886115f1e6002637324f3bfe73f92378897dea8c63",
+      "upstream": [
+        "homepage, https://scikit-learn.org",
+        "source, https://github.com/scikit-learn/scikit-learn",
+        "download, https://pypi.org/project/scikit-learn/#files",
+        "tracker, https://github.com/scikit-learn/scikit-learn/issues",
+        "release notes, https://scikit-learn.org/stable/whats_new"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/COPYING",
+          "bytes": 5078,
+          "sha256": "fde6cdc0a86c65a845af17086f964f7a38d934467b7f36203894af30ecee7640"
+        }
+      ],
+      "source_distribution": {
+        "filename": "scikit_learn-1.7.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "sha256": "e5bf3d930aee75a65478df91ac1225ff89cd28e9ac7bd1196853a9229b6adb0b"
+      }
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1",
+      "declared_license": "License :: OSI Approved :: BSD License",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "7cdd5544eb610b86e000b6f0a21e86f84423faf0aacbb99990f3d41f25e1f314",
+      "upstream": [
+        "homepage, https://scipy.org/",
+        "documentation, https://docs.scipy.org/doc/scipy/",
+        "source, https://github.com/scipy/scipy",
+        "download, https://github.com/scipy/scipy/releases",
+        "tracker, https://github.com/scipy/scipy/issues"
+      ],
+      "license_files": [
+        {
+          "path": "LICENSE.txt",
+          "bytes": 46838,
+          "sha256": "4daf14e37432e7026165979ecb7a39930707a3e89bef4876cfaf9dad36ed364a"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "shellingham",
+      "version": "1.5.4",
+      "declared_license": "ISC License",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "183d80220a37493262795739dd357cc5bb3f49bd390cc9198d5180e5451a07fa",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "bytes": 751,
+          "sha256": "f388fd38cad13112c1dc0f669bbe80e7f84541edbafb72f3030d2ca7642c3c9d"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "562042078c2752549f6d8a7c86dbc5dd708088a7be6d80672ec7b07100b72468",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1066,
+          "sha256": "4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "sniffio",
+      "version": "1.3.1",
+      "declared_license": "MIT OR Apache-2.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "0b318b57098edeccf585e60a889a6b6a7b5c4086f3a9aa62eff76a1d3cee12d9",
+      "upstream": [
+        "Homepage, https://github.com/python-trio/sniffio",
+        "Documentation, https://sniffio.readthedocs.io/",
+        "Changelog, https://sniffio.readthedocs.io/en/latest/history.html"
+      ],
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "bytes": 185,
+          "sha256": "652c878488d1456361e08c3f8607fd7ba59892a14103d15cce4ff93c85b5cc8b"
+        },
+        {
+          "path": "LICENSE.APACHE2",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "LICENSE.MIT",
+          "bytes": 1046,
+          "sha256": "3e6dae555eb92787fc82d1d48355677f454c7f65aeb38d3f9e72bf9a3daf034b"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "soupsieve",
+      "version": "2.8.3",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "4f8755eb5267c1f34e626986c0f3356a6bd68747a6097a7e5168e1411dbdf420",
+      "upstream": [
+        "Homepage, https://github.com/facelessuser/soupsieve"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE.md",
+          "bytes": 1096,
+          "sha256": "76a0acdb98c3a63681e20b6f096699ef8cad5fb35d56eef8387e0fa71d797a9a"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "termcolor",
+      "version": "3.3.0",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "880aeaba6300677d4ecc022fb63f8adcd57a753b6fd2b5ec17841f722f910196",
+      "upstream": [
+        "Changelog, https://github.com/termcolor/termcolor/releases",
+        "Homepage, https://github.com/termcolor/termcolor",
+        "Source, https://github.com/termcolor/termcolor"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/COPYING.txt",
+          "bytes": 1072,
+          "sha256": "e79b6bd82962c1330caaa7c42278567b08667777673f8e2371a624d5715d4c0e"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.6.0",
+      "declared_license": "BSD-3-Clause",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "a45df8d07ea1883d772183a501d7d526076aa70dfcfddb276a2cbdc04def5341",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1507,
+          "sha256": "81ac619075248b06e53660b652d10e485f4675f5d0ae0f97ea22370da1f7e23b"
+        }
+      ],
+      "source_distribution": {
+        "filename": "threadpoolctl-3.6.0-py3-none-any.whl",
+        "sha256": "43a0b8fd5a2928500110039e43a5eed8480b918967083ea48dc3ab9f13c4a7fb"
+      }
+    },
+    {
+      "name": "tqdm",
+      "version": "4.67.3",
+      "declared_license": "MPL-2.0 AND MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "7c0e9a662c19095f339a4b761201eb06cff9c61fb9581535b2f96f44e718ed29",
+      "upstream": [
+        "homepage, https://tqdm.github.io",
+        "repository, https://github.com/tqdm/tqdm",
+        "changelog, https://tqdm.github.io/releases",
+        "wiki, https://github.com/tqdm/tqdm/wiki"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENCE",
+          "bytes": 1985,
+          "sha256": "fcff87c3a47ce8028a8512aa182d4fcf0ad1c90544ee75cf9b343684cac194de"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "typer",
+      "version": "0.24.1",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "578396a168c184f35ca0868ec61af572cce8ebd9de3ca3873115c446432c70ab",
+      "upstream": [
+        "Homepage, https://github.com/fastapi/typer",
+        "Documentation, https://typer.tiangolo.com",
+        "Repository, https://github.com/fastapi/typer",
+        "Issues, https://github.com/fastapi/typer/issues",
+        "Changelog, https://typer.tiangolo.com/release-notes/"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1086,
+          "sha256": "58992cebcf8dfb6e40c4e2112ed12126c243666dca3912a3d78b7ecac4859d49"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.2",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "61096cd0bfe3c7040b6f98c22b02d190fe01936d0ff7616c5134fed02891953a",
+      "upstream": [
+        "Homepage, https://github.com/pydantic/typing-inspection",
+        "Documentation, https://pydantic.github.io/typing-inspection/dev/",
+        "Source, https://github.com/pydantic/typing-inspection",
+        "Changelog, https://github.com/pydantic/typing-inspection/blob/main/HISTORY.md"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 1090,
+          "sha256": "804b59b25f2c31bd278f9202a19ae49a3945aa2664387e2d0a128c7cacc61ec3"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.15.0",
+      "declared_license": "PSF-2.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "c138378fe8f18934ac99de060535c53ec6c13aeed65e94c32641da7ee3192a72",
+      "upstream": [
+        "Bug Tracker, https://github.com/python/typing_extensions/issues",
+        "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+        "Documentation, https://typing-extensions.readthedocs.io/",
+        "Home, https://github.com/python/typing_extensions",
+        "Q & A, https://github.com/python/typing/discussions",
+        "Repository, https://github.com/python/typing_extensions"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 13936,
+          "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "Unidecode",
+      "version": "1.4.0",
+      "declared_license": "GPL",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "ee93814bb7dbe7a3487aeb813bbc6a62f2ee4c8b2fd2a327bf835ea19c5566cf",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "bytes": 18092,
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0",
+      "declared_license": "MIT",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "10898c620e8007c030e07fa5622b68358a43010025dfbd78a1cb797699de2bb4",
+      "upstream": [
+        "Changelog, https://github.com/urllib3/urllib3/blob/main/CHANGES.rst",
+        "Documentation, https://urllib3.readthedocs.io",
+        "Code, https://github.com/urllib3/urllib3",
+        "Issue tracker, https://github.com/urllib3/urllib3/issues",
+        "Security policy, https://urllib3.readthedocs.io/en/latest/security.html"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE.txt",
+          "bytes": 1093,
+          "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    },
+    {
+      "name": "webencodings",
+      "version": "0.5.1",
+      "declared_license": "BSD",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "290ec583c2efe3f9db5006f3012dbd426897cc6ec79d62c85e9176a0de0fdaee",
+      "upstream": [],
+      "license_files": [
+        {
+          "path": "webencodings-LICENSE",
+          "bytes": 1490,
+          "sha256": "f23bae6ada76095610a77137fb92aec7342723900211c5826d54b4c57907ca56"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      },
+      "upstream_license_fallback": "https://raw.githubusercontent.com/gsnedders/python-webencodings/v0.5.1/LICENSE"
+    },
+    {
+      "name": "yarl",
+      "version": "1.25.1",
+      "declared_license": "Apache-2.0",
+      "scope": "separately installed benchmark preparation/scoring environment",
+      "metadata_sha256": "fd6baa258a11c4d7e7008272a69180d4d34aa04a6a5afda36ac5e55aa0aa4f41",
+      "upstream": [
+        "Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org",
+        "Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org",
+        "CI: GitHub Workflows, https://github.com/aio-libs/yarl/actions?query=branch:master",
+        "Code of Conduct, https://github.com/aio-libs/.github/blob/master/CODE_OF_CONDUCT.md",
+        "Coverage: codecov, https://codecov.io/github/aio-libs/yarl",
+        "Docs: Changelog, https://yarl.aio-libs.org/en/latest/changes/",
+        "Docs: RTD, https://yarl.aio-libs.org",
+        "GitHub: issues, https://github.com/aio-libs/yarl/issues",
+        "GitHub: repo, https://github.com/aio-libs/yarl"
+      ],
+      "license_files": [
+        {
+          "path": "licenses/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "licenses/NOTICE",
+          "bytes": 609,
+          "sha256": "56d6ac6c8105c0a51304c21db060e361af9a8ea0af9a75c239c28b5d13693838"
+        }
+      ],
+      "source_distribution": {
+        "kind": "frozen scoring environment metadata, matching pinned name/version"
+      }
+    }
+  ]
+}

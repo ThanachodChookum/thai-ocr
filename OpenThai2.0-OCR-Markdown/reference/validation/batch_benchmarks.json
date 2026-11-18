@@ -1,0 +1,1113 @@
+{
+  "complete": true,
+  "purpose": "Prepared-page single/double/triple throughput and staged versus pipelined scheduling; guarded refinement avoids overlapping same-class crop additions.",
+  "package_version": "3.5.0.post4",
+  "gpu_candidate_wheel_sha256": "e7a3eacb6bbcf3c60c6034e45b1cd3fc16e90ba4ab0af2616c6b349044bf174e",
+  "release_wheel_equivalence": {
+    "gpu_candidate_wheel_sha256": "e7a3eacb6bbcf3c60c6034e45b1cd3fc16e90ba4ab0af2616c6b349044bf174e",
+    "release_wheel_sha256": "09eb1c41230adeb5d0272e4f4ed741288f2d67086f10ed6d56cbe0601de8fcc4",
+    "prepared_batch_runtime_python_ast_equal": true,
+    "other_runtime_ast_equal_except_parse_many_default_resolution": true,
+    "python_modules_checked": 32,
+    "changed_archive_members": [
+      "nemotron_parse/SOURCE_MANIFEST.json",
+      "nemotron_parse/inference.py",
+      "nemotron_parse-3.5.0.post4.dist-info/RECORD"
+    ],
+    "change_scope": "Prepared-batch benchmark path unchanged. parse_many now resolves its default to 128 HTTP requests or 4 custom-backend workers; batching docstring and non-executable source provenance corrected. Final installed wheel passed 74 tests including the HTTP default concurrency check."
+  },
+  "release_model_sha256": "81dd7609c589f3694ce75520c25af5010953231358de6aec4d03e8c6aac787e9",
+  "hardware": "one H100 80GB per run",
+  "server": {
+    "vllm": "0.26.0",
+    "max_num_seqs": 192,
+    "max_num_batched_tokens": 16384,
+    "max_model_len": 16384,
+    "one_token_mtp": true,
+    "distributed_executor_backend": "uni",
+    "tensor_parallel_size": 1,
+    "prefix_caching": false,
+    "flash_attention_version": 3
+  },
+  "runtime_versions": {
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "transformers": "5.14.1",
+    "huggingface-hub": "1.24.0",
+    "accelerate": "1.12.0",
+    "timm": "1.0.22",
+    "einops": "0.8.1",
+    "Pillow": "12.2.0",
+    "numpy": "2.2.6",
+    "safetensors": "0.8.0",
+    "beautifulsoup4": "4.13.3",
+    "vllm": "0.26.0",
+    "openai": "2.30.0",
+    "httpx": "0.28.1",
+    "nemotron-parse": "3.5.0.post4"
+  },
+  "sampling": {
+    "seed": 20261012,
+    "top_k": 50,
+    "top_p": 1.0,
+    "fullpage": {
+      "temperature": 0.2,
+      "repetition_penalty": 1.05,
+      "max_tokens": 8744
+    },
+    "detection": {
+      "temperature": 0.2,
+      "repetition_penalty": 1.05,
+      "max_tokens": 4096
+    },
+    "crop": {
+      "temperature": 0.1,
+      "repetition_penalty": 1.0,
+      "max_tokens": 8744
+    }
+  },
+  "preparation": {
+    "pages": 2078,
+    "preprocessing_seconds": 9.701208557002246,
+    "decoded_pixels_and_encoded_requests_cached": true
+  },
+  "concurrency_selection": {
+    "complete": true,
+    "selected_concurrency": {
+      "double": 256,
+      "triple": 128
+    },
+    "scope": "256-page pipelined sample"
+  },
+  "runs": {
+    "double_pipelined": {
+      "mode": "double",
+      "schedule": "pipelined",
+      "peak_inflight_requests": 256,
+      "request_service_seconds": {
+        "fullpage": 28512.122418867133,
+        "crop": 13850.49556360254
+      },
+      "stage_first_request_seconds": {
+        "fullpage": 0.0008634909754619002,
+        "crop": 8.29464137996547
+      },
+      "overlapping_stage_times": true,
+      "pages": 2078,
+      "complete_pages": 2038,
+      "incomplete_pages": 40,
+      "concurrency": 256,
+      "postprocess_workers": 8,
+      "preprocessing_seconds": 9.701208557002246,
+      "pipeline_seconds": 175.00423502299236,
+      "processed_pages_per_second": 11.87399836196529,
+      "complete_pages_per_second": 11.645432464718604,
+      "stage_times": {
+        "fullpage_span_seconds": 174.67124180600513,
+        "crop_span_seconds": 166.61445210501552
+      },
+      "requests": {
+        "fullpage": 2078,
+        "detection": 0,
+        "crop": 2331
+      },
+      "token_limited_responses": {
+        "fullpage": 33,
+        "crop": 8
+      },
+      "completion_tokens": 3832237,
+      "postprocessing": {
+        "infer_headers": true,
+        "render_charts": true,
+        "split_chart_value_percent": true,
+        "relocate_chart_captions": true,
+        "normalize_text": true,
+        "deduplicate": true
+      },
+      "allow_partial": true,
+      "timing_excludes": [
+        "initial image preparation",
+        "output serialization",
+        "server startup",
+        "warmup requests"
+      ],
+      "timing_includes": [
+        "all mode inference stages",
+        "predicted-region crop preparation",
+        "merge and document rendering"
+      ],
+      "keys_sha256": "e2800a56d79085a612e2677e87fabd9735be7d92479cd68ad750ff3b49f67d3a",
+      "vllm_queue": {
+        "sample_interval_seconds": 0.5,
+        "samples": 344,
+        "peak_running": 192.0,
+        "peak_waiting": 64.0,
+        "fraction_samples_with_waiting": 0.9215116279069767,
+        "mean_running": 178.1656976744186
+      },
+      "output_serialization_seconds": 1.3962035359581932,
+      "pipeline_plus_serialization_seconds": 176.40043855895055,
+      "pages_per_second_with_serialization": 11.780016064447377,
+      "verified_unique_prediction_rows": 2078
+    },
+    "double_staged": {
+      "mode": "double",
+      "schedule": "staged",
+      "pages": 2078,
+      "complete_pages": 2046,
+      "incomplete_pages": 32,
+      "concurrency": 256,
+      "postprocess_workers": 8,
+      "preprocessing_seconds": 9.701208557002246,
+      "pipeline_seconds": 186.15673828299623,
+      "processed_pages_per_second": 11.162636492056581,
+      "complete_pages_per_second": 10.990738336259751,
+      "stage_times": {
+        "fullpage_seconds": 135.18058688100427,
+        "crop_preprocessing_seconds": 3.983198474976234,
+        "crop_seconds": 43.71528333501192,
+        "postprocessing_seconds": 3.214057782024611
+      },
+      "requests": {
+        "fullpage": 2078,
+        "detection": 0,
+        "crop": 2345
+      },
+      "token_limited_responses": {
+        "crop": 5,
+        "fullpage": 28
+      },
+      "completion_tokens": 3798721,
+      "postprocessing": {
+        "infer_headers": true,
+        "render_charts": true,
+        "split_chart_value_percent": true,
+        "relocate_chart_captions": true,
+        "normalize_text": true,
+        "deduplicate": true
+      },
+      "allow_partial": true,
+      "timing_excludes": [
+        "initial image preparation",
+        "output serialization",
+        "server startup",
+        "warmup requests"
+      ],
+      "timing_includes": [
+        "all mode inference stages",
+        "predicted-region crop preparation",
+        "merge and document rendering"
+      ],
+      "keys_sha256": "e2800a56d79085a612e2677e87fabd9735be7d92479cd68ad750ff3b49f67d3a",
+      "vllm_queue": {
+        "sample_interval_seconds": 0.5,
+        "samples": 365,
+        "peak_running": 192.0,
+        "peak_waiting": 64.0,
+        "fraction_samples_with_waiting": 0.8301369863013699,
+        "mean_running": 163.14794520547946
+      },
+      "output_serialization_seconds": 1.5585761109832674,
+      "pipeline_plus_serialization_seconds": 187.7153143939795,
+      "pages_per_second_with_serialization": 11.069954557030252,
+      "verified_unique_prediction_rows": 2078
+    },
+    "single_pipelined": {
+      "mode": "single",
+      "schedule": "pipelined",
+      "peak_inflight_requests": 128,
+      "request_service_seconds": {
+        "fullpage": 16892.07212134439
+      },
+      "stage_first_request_seconds": {
+        "fullpage": 0.000805519986897707
+      },
+      "overlapping_stage_times": true,
+      "pages": 2078,
+      "complete_pages": 2047,
+      "incomplete_pages": 31,
+      "concurrency": 128,
+      "postprocess_workers": 8,
+      "preprocessing_seconds": 9.701208557002246,
+      "pipeline_seconds": 139.41391940996982,
+      "processed_pages_per_second": 14.905254861168455,
+      "complete_pages_per_second": 14.682895428687116,
+      "stage_times": {
+        "fullpage_span_seconds": 139.2903347380343
+      },
+      "requests": {
+        "fullpage": 2078,
+        "detection": 0,
+        "crop": 0
+      },
+      "token_limited_responses": {
+        "fullpage": 31
+      },
+      "completion_tokens": 2695113,
+      "postprocessing": {
+        "infer_headers": true,
+        "render_charts": true,
+        "split_chart_value_percent": true,
+        "relocate_chart_captions": true,
+        "normalize_text": true,
+        "deduplicate": true
+      },
+      "allow_partial": true,
+      "timing_excludes": [
+        "initial image preparation",
+        "output serialization",
+        "server startup",
+        "warmup requests"
+      ],
+      "timing_includes": [
+        "all mode inference stages",
+        "predicted-region crop preparation",
+        "merge and document rendering"
+      ],
+      "keys_sha256": "e2800a56d79085a612e2677e87fabd9735be7d92479cd68ad750ff3b49f67d3a",
+      "vllm_queue": {
+        "sample_interval_seconds": 0.5,
+        "samples": 275,
+        "peak_running": 128.0,
+        "peak_waiting": 9.0,
+        "fraction_samples_with_waiting": 0.01818181818181818,
+        "mean_running": 114.3709090909091
+      },
+      "output_serialization_seconds": 1.4439532819669694,
+      "pipeline_plus_serialization_seconds": 140.8578726919368,
+      "pages_per_second_with_serialization": 14.752459058818031,
+      "verified_unique_prediction_rows": 2078
+    },
+    "single_staged": {
+      "mode": "single",
+      "schedule": "staged",
+      "pages": 2078,
+      "complete_pages": 2048,
+      "incomplete_pages": 30,
+      "concurrency": 128,
+      "postprocess_workers": 8,
+      "preprocessing_seconds": 9.701208557002246,
+      "pipeline_seconds": 142.67479116702452,
+      "processed_pages_per_second": 14.564591144677802,
+      "complete_pages_per_second": 14.354322745091501,
+      "stage_times": {
+        "fullpage_seconds": 139.43862492003245,
+        "postprocessing_seconds": 3.2128840790246613
+      },
+      "requests": {
+        "fullpage": 2078,
+        "detection": 0,
+        "crop": 0
+      },
+      "token_limited_responses": {
+        "fullpage": 30
+      },
+      "completion_tokens": 2695641,
+      "postprocessing": {
+        "infer_headers": true,
+        "render_charts": true,
+        "split_chart_value_percent": true,
+        "relocate_chart_captions": true,
+        "normalize_text": true,
+        "deduplicate": true
+      },
+      "allow_partial": true,
+      "timing_excludes": [
+        "initial image preparation",
+        "output serialization",
+        "server startup",
+        "warmup requests"
+      ],
+      "timing_includes": [
+        "all mode inference stages",
+        "predicted-region crop preparation",
+        "merge and document rendering"
+      ],
+      "keys_sha256": "e2800a56d79085a612e2677e87fabd9735be7d92479cd68ad750ff3b49f67d3a",
+      "vllm_queue": {
+        "sample_interval_seconds": 0.5,
+        "samples": 281,
+        "peak_running": 128.0,
+        "peak_waiting": 10.0,
+        "fraction_samples_with_waiting": 0.021352313167259787,
+        "mean_running": 111.33807829181495
+      },
+      "output_serialization_seconds": 1.3698211470036767,
+      "pipeline_plus_serialization_seconds": 144.0446123140282,
+      "pages_per_second_with_serialization": 14.42608624243302,
+      "verified_unique_prediction_rows": 2078
+    },
+    "triple_pipelined": {
+      "mode": "triple",
+      "schedule": "pipelined",
+      "peak_inflight_requests": 128,
+      "request_service_seconds": {
+        "detection": 2041.2865145394462,
+        "crop": 6923.074506564648,
+        "fullpage": 14563.87797958206
+      },
+      "stage_first_request_seconds": {
+        "detection": 0.002384984982199967,
+        "crop": 1.4474368169903755,
+        "fullpage": 0.00044989498564973474
+      },
+      "overlapping_stage_times": true,
+      "pages": 2078,
+      "complete_pages": 2039,
+      "incomplete_pages": 39,
+      "concurrency": 128,
+      "postprocess_workers": 8,
+      "preprocessing_seconds": 9.701208557002246,
+      "pipeline_seconds": 190.63594810198992,
+      "processed_pages_per_second": 10.900357569959855,
+      "complete_pages_per_second": 10.695779155509213,
+      "stage_times": {
+        "detection_span_seconds": 183.4038801449933,
+        "crop_span_seconds": 189.06292444997234,
+        "fullpage_span_seconds": 190.37763873301446
+      },
+      "requests": {
+        "fullpage": 2078,
+        "detection": 2078,
+        "crop": 2610
+      },
+      "token_limited_responses": {
+        "fullpage": 31,
+        "crop": 22
+      },
+      "completion_tokens": 4240052,
+      "postprocessing": {
+        "infer_headers": true,
+        "render_charts": true,
+        "split_chart_value_percent": true,
+        "relocate_chart_captions": true,
+        "normalize_text": true,
+        "deduplicate": true
+      },
+      "allow_partial": true,
+      "timing_excludes": [
+        "initial image preparation",
+        "output serialization",
+        "server startup",
+        "warmup requests"
+      ],
+      "timing_includes": [
+        "all mode inference stages",
+        "predicted-region crop preparation",
+        "merge and document rendering"
+      ],
+      "keys_sha256": "e2800a56d79085a612e2677e87fabd9735be7d92479cd68ad750ff3b49f67d3a",
+      "vllm_queue": {
+        "sample_interval_seconds": 0.5,
+        "samples": 375,
+        "peak_running": 128.0,
+        "peak_waiting": 4.0,
+        "fraction_samples_with_waiting": 0.013333333333333334,
+        "mean_running": 115.208
+      },
+      "output_serialization_seconds": 1.5289277550182305,
+      "pipeline_plus_serialization_seconds": 192.16487585700816,
+      "pages_per_second_with_serialization": 10.813630694645056,
+      "verified_unique_prediction_rows": 2078
+    },
+    "triple_staged": {
+      "mode": "triple",
+      "schedule": "staged",
+      "pages": 2078,
+      "complete_pages": 2043,
+      "incomplete_pages": 35,
+      "concurrency": 128,
+      "postprocess_workers": 8,
+      "preprocessing_seconds": 9.701208557002246,
+      "pipeline_seconds": 284.1452879360295,
+      "processed_pages_per_second": 7.313160162162628,
+      "complete_pages_per_second": 7.189983739797039,
+      "stage_times": {
+        "fullpage_seconds": 137.60017299599713,
+        "detection_seconds": 89.23946119600441,
+        "crop_preprocessing_seconds": 4.473296172975097,
+        "crop_seconds": 49.61852987698512,
+        "postprocessing_seconds": 3.1865693450090475
+      },
+      "requests": {
+        "fullpage": 2078,
+        "detection": 2078,
+        "crop": 2611
+      },
+      "token_limited_responses": {
+        "fullpage": 26,
+        "crop": 23
+      },
+      "completion_tokens": 4214735,
+      "postprocessing": {
+        "infer_headers": true,
+        "render_charts": true,
+        "split_chart_value_percent": true,
+        "relocate_chart_captions": true,
+        "normalize_text": true,
+        "deduplicate": true
+      },
+      "allow_partial": true,
+      "timing_excludes": [
+        "initial image preparation",
+        "output serialization",
+        "server startup",
+        "warmup requests"
+      ],
+      "timing_includes": [
+        "all mode inference stages",
+        "predicted-region crop preparation",
+        "merge and document rendering"
+      ],
+      "keys_sha256": "e2800a56d79085a612e2677e87fabd9735be7d92479cd68ad750ff3b49f67d3a",
+      "vllm_queue": {
+        "sample_interval_seconds": 0.5,
+        "samples": 557,
+        "peak_running": 128.0,
+        "peak_waiting": 36.0,
+        "fraction_samples_with_waiting": 0.1687612208258528,
+        "mean_running": 97.89766606822262
+      },
+      "output_serialization_seconds": 1.5726757429656573,
+      "pipeline_plus_serialization_seconds": 285.71796367899515,
+      "pages_per_second_with_serialization": 7.272906376774539,
+      "verified_unique_prediction_rows": 2078
+    }
+  },
+  "earlier_staged_runs": {
+    "double": {
+      "mode": "double",
+      "pages": 2078,
+      "complete_pages": 2045,
+      "incomplete_pages": 33,
+      "concurrency": 256,
+      "postprocess_workers": 8,
+      "preprocessing_seconds": 10.932252227998106,
+      "pipeline_seconds": 191.57418219500687,
+      "processed_pages_per_second": 10.846973095178168,
+      "complete_pages_per_second": 10.674716063349063,
+      "stage_times": {
+        "fullpage_seconds": 134.28128188298433,
+        "crop_preprocessing_seconds": 4.702835199015681,
+        "crop_seconds": 49.023790333012585,
+        "postprocessing_seconds": 3.4980894689797424
+      },
+      "requests": {
+        "fullpage": 2078,
+        "detection": 0,
+        "crop": 2330
+      },
+      "token_limited_responses": {
+        "fullpage": 29,
+        "crop": 5
+      },
+      "completion_tokens": 3783551,
+      "postprocessing": {
+        "infer_headers": true,
+        "render_charts": true,
+        "split_chart_value_percent": true,
+        "relocate_chart_captions": true,
+        "normalize_text": true,
+        "deduplicate": true
+      },
+      "allow_partial": true,
+      "timing_excludes": [
+        "initial image preparation",
+        "output serialization",
+        "server startup",
+        "warmup requests"
+      ],
+      "timing_includes": [
+        "all mode inference stages",
+        "predicted-region crop preparation",
+        "merge and document rendering"
+      ],
+      "keys_sha256": "e2800a56d79085a612e2677e87fabd9735be7d92479cd68ad750ff3b49f67d3a",
+      "output_serialization_seconds": 1.5591519760200754,
+      "pipeline_plus_serialization_seconds": 193.13333417102695,
+      "pages_per_second_with_serialization": 10.759406235693376,
+      "verified_unique_prediction_rows": 2078
+    },
+    "single_c128": {
+      "mode": "single",
+      "pages": 2078,
+      "complete_pages": 2052,
+      "incomplete_pages": 26,
+      "concurrency": 128,
+      "postprocess_workers": 8,
+      "preprocessing_seconds": 10.932252227998106,
+      "pipeline_seconds": 174.87433017898002,
+      "processed_pages_per_second": 11.882818924156638,
+      "complete_pages_per_second": 11.734140727800492,
+      "stage_times": {
+        "fullpage_seconds": 171.50884548400063,
+        "postprocessing_seconds": 3.302743566018762
+      },
+      "requests": {
+        "fullpage": 2078,
+        "detection": 0,
+        "crop": 0
+      },
+      "token_limited_responses": {
+        "fullpage": 26
+      },
+      "completion_tokens": 2680888,
+      "postprocessing": {
+        "infer_headers": true,
+        "render_charts": true,
+        "split_chart_value_percent": true,
+        "relocate_chart_captions": true,
+        "normalize_text": true,
+        "deduplicate": true
+      },
+      "allow_partial": true,
+      "timing_excludes": [
+        "initial image preparation",
+        "output serialization",
+        "server startup",
+        "warmup requests"
+      ],
+      "timing_includes": [
+        "all mode inference stages",
+        "predicted-region crop preparation",
+        "merge and document rendering"
+      ],
+      "keys_sha256": "e2800a56d79085a612e2677e87fabd9735be7d92479cd68ad750ff3b49f67d3a",
+      "output_serialization_seconds": 1.3440068789932411,
+      "pipeline_plus_serialization_seconds": 176.21833705797326,
+      "pages_per_second_with_serialization": 11.792189364018164,
+      "verified_unique_prediction_rows": 2078
+    },
+    "single_c256": {
+      "mode": "single",
+      "pages": 2078,
+      "complete_pages": 2045,
+      "incomplete_pages": 33,
+      "concurrency": 256,
+      "postprocess_workers": 8,
+      "preprocessing_seconds": 10.932252227998106,
+      "pipeline_seconds": 137.7506838600093,
+      "processed_pages_per_second": 15.08522456492333,
+      "complete_pages_per_second": 14.845661325923103,
+      "stage_times": {
+        "fullpage_seconds": 134.78283468799782,
+        "postprocessing_seconds": 2.9462760030000936
+      },
+      "requests": {
+        "fullpage": 2078,
+        "detection": 0,
+        "crop": 0
+      },
+      "token_limited_responses": {
+        "fullpage": 33
+      },
+      "completion_tokens": 2719778,
+      "postprocessing": {
+        "infer_headers": true,
+        "render_charts": true,
+        "split_chart_value_percent": true,
+        "relocate_chart_captions": true,
+        "normalize_text": true,
+        "deduplicate": true
+      },
+      "allow_partial": true,
+      "timing_excludes": [
+        "initial image preparation",
+        "output serialization",
+        "server startup",
+        "warmup requests"
+      ],
+      "timing_includes": [
+        "all mode inference stages",
+        "predicted-region crop preparation",
+        "merge and document rendering"
+      ],
+      "keys_sha256": "e2800a56d79085a612e2677e87fabd9735be7d92479cd68ad750ff3b49f67d3a",
+      "output_serialization_seconds": 1.2913870430202223,
+      "pipeline_plus_serialization_seconds": 139.04207090302953,
+      "pages_per_second_with_serialization": 14.945116873649235,
+      "verified_unique_prediction_rows": 2078
+    },
+    "triple": {
+      "mode": "triple",
+      "pages": 2078,
+      "complete_pages": 2045,
+      "incomplete_pages": 33,
+      "concurrency": 256,
+      "postprocess_workers": 8,
+      "preprocessing_seconds": 10.932252227998106,
+      "pipeline_seconds": 282.9865308199951,
+      "processed_pages_per_second": 7.343105673541031,
+      "complete_pages_per_second": 7.226492349562758,
+      "stage_times": {
+        "fullpage_seconds": 134.07296904400573,
+        "detection_seconds": 86.69076943298569,
+        "crop_preprocessing_seconds": 5.352364441001555,
+        "crop_seconds": 53.1396865429997,
+        "postprocessing_seconds": 3.6966218999878038
+      },
+      "requests": {
+        "fullpage": 2078,
+        "detection": 2078,
+        "crop": 2619
+      },
+      "token_limited_responses": {
+        "fullpage": 28,
+        "crop": 22
+      },
+      "completion_tokens": 4206354,
+      "postprocessing": {
+        "infer_headers": true,
+        "render_charts": true,
+        "split_chart_value_percent": true,
+        "relocate_chart_captions": true,
+        "normalize_text": true,
+        "deduplicate": true
+      },
+      "allow_partial": true,
+      "timing_excludes": [
+        "initial image preparation",
+        "output serialization",
+        "server startup",
+        "warmup requests"
+      ],
+      "timing_includes": [
+        "all mode inference stages",
+        "predicted-region crop preparation",
+        "merge and document rendering"
+      ],
+      "keys_sha256": "e2800a56d79085a612e2677e87fabd9735be7d92479cd68ad750ff3b49f67d3a",
+      "output_serialization_seconds": 1.8944782140024472,
+      "pipeline_plus_serialization_seconds": 284.88100903399754,
+      "pages_per_second_with_serialization": 7.294273518077903,
+      "verified_unique_prediction_rows": 2078
+    }
+  },
+  "comparison": {
+    "single": {
+      "concurrency": 128,
+      "staged_pages_per_second": 14.564591144677802,
+      "pipelined_pages_per_second": 14.905254861168455,
+      "throughput_ratio": 1.0233898578481648,
+      "elapsed_reduction_percent": 2.285527618706873,
+      "staged_completion_tokens": 2695641,
+      "pipelined_completion_tokens": 2695113,
+      "staged_complete_pages": 2048,
+      "pipelined_complete_pages": 2047
+    },
+    "double": {
+      "concurrency": 256,
+      "staged_pages_per_second": 11.162636492056581,
+      "pipelined_pages_per_second": 11.87399836196529,
+      "throughput_ratio": 1.063727047854234,
+      "elapsed_reduction_percent": 5.990921071602462,
+      "staged_completion_tokens": 3798721,
+      "pipelined_completion_tokens": 3832237,
+      "staged_complete_pages": 2046,
+      "pipelined_complete_pages": 2038
+    },
+    "triple": {
+      "concurrency": 128,
+      "staged_pages_per_second": 7.313160162162628,
+      "pipelined_pages_per_second": 10.900357569959855,
+      "throughput_ratio": 1.4905126276813867,
+      "elapsed_reduction_percent": 32.90898839578561,
+      "staged_completion_tokens": 4214735,
+      "pipelined_completion_tokens": 4240052,
+      "staged_complete_pages": 2043,
+      "pipelined_complete_pages": 2039
+    }
+  },
+  "official_quality": {
+    "baseline/double": {
+      "complete": true,
+      "pages": 2078,
+      "fresh_page_evaluations": 2078,
+      "reused_page_scores": 0,
+      "official_errors": 0,
+      "scores": {
+        "charts": 0.577349577261549,
+        "visual_grounding": 0.7053143510345445,
+        "tables": 0.8169993270165995,
+        "content_faithfulness": 0.8814658795594027,
+        "semantic_formatting": 0.6802102726893035,
+        "overall": 0.7322678815122798
+      },
+      "independent_scores": {
+        "tables": 0.8169993270165995,
+        "charts": 0.577349577261549,
+        "content_faithfulness": 0.8814658795594027,
+        "semantic_formatting": 0.6802102726893035,
+        "visual_grounding": 0.7053143510345445,
+        "overall": 0.7322678815122798
+      },
+      "denominators": {
+        "tables": 503,
+        "charts": 568,
+        "content_faithfulness": 506,
+        "semantic_formatting": 456,
+        "visual_grounding": 500
+      },
+      "prediction_sha256": "925036f73d20d0ebf7a3411a10f662d4996c8d4ac93a2f30db02547bbe431524",
+      "seconds": 112.09945668200089
+    },
+    "baseline/single": {
+      "complete": true,
+      "pages": 2078,
+      "fresh_page_evaluations": 2078,
+      "reused_page_scores": 0,
+      "official_errors": 0,
+      "scores": {
+        "charts": 0.564825887141028,
+        "visual_grounding": 0.7048062312678962,
+        "tables": 0.8058640339417577,
+        "content_faithfulness": 0.8806442186073474,
+        "semantic_formatting": 0.6806519653753794,
+        "overall": 0.7273584672666817
+      },
+      "independent_scores": {
+        "tables": 0.8058640339417577,
+        "charts": 0.564825887141028,
+        "content_faithfulness": 0.8806442186073474,
+        "semantic_formatting": 0.6806519653753794,
+        "visual_grounding": 0.7048062312678962,
+        "overall": 0.7273584672666817
+      },
+      "denominators": {
+        "tables": 503,
+        "charts": 568,
+        "content_faithfulness": 506,
+        "semantic_formatting": 456,
+        "visual_grounding": 500
+      },
+      "prediction_sha256": "8a139e898d71fd206340887045cff80b0ba2597e96910057002ad4fe35302e4e",
+      "seconds": 108.71837869426236
+    },
+    "baseline/triple": {
+      "complete": true,
+      "pages": 2078,
+      "fresh_page_evaluations": 2078,
+      "reused_page_scores": 0,
+      "official_errors": 0,
+      "scores": {
+        "charts": 0.5819361878340752,
+        "visual_grounding": 0.7047845094496455,
+        "tables": 0.8234070433681294,
+        "content_faithfulness": 0.8808115694155612,
+        "semantic_formatting": 0.6812589701148343,
+        "overall": 0.7344396560364491
+      },
+      "independent_scores": {
+        "tables": 0.8234070433681294,
+        "charts": 0.5819361878340752,
+        "content_faithfulness": 0.8808115694155612,
+        "semantic_formatting": 0.6812589701148343,
+        "visual_grounding": 0.7047845094496455,
+        "overall": 0.7344396560364491
+      },
+      "denominators": {
+        "tables": 503,
+        "charts": 568,
+        "content_faithfulness": 506,
+        "semantic_formatting": 456,
+        "visual_grounding": 500
+      },
+      "prediction_sha256": "a849a739ddeebce793d8f9684b9141a7dd29b95d4d74d88bd8f5ce445866f55b",
+      "seconds": 111.65782342711464
+    },
+    "overlap/double_pipelined": {
+      "complete": true,
+      "pages": 2078,
+      "fresh_page_evaluations": 2078,
+      "reused_page_scores": 0,
+      "official_errors": 0,
+      "scores": {
+        "charts": 0.5786840995467756,
+        "visual_grounding": 0.7049578809213192,
+        "tables": 0.8139896349961072,
+        "content_faithfulness": 0.8808529188100122,
+        "semantic_formatting": 0.6857629648330742,
+        "overall": 0.7328494998214576
+      },
+      "independent_scores": {
+        "tables": 0.8139896349961072,
+        "charts": 0.5786840995467756,
+        "content_faithfulness": 0.8808529188100122,
+        "semantic_formatting": 0.6857629648330742,
+        "visual_grounding": 0.7049578809213192,
+        "overall": 0.7328494998214576
+      },
+      "denominators": {
+        "tables": 503,
+        "charts": 568,
+        "content_faithfulness": 506,
+        "semantic_formatting": 456,
+        "visual_grounding": 500
+      },
+      "prediction_sha256": "089afb763fa794efd9e11e29e69a2dc833d350814eea09b4e09e6f9c8c9a8706",
+      "seconds": 113.78007110398903
+    },
+    "overlap/double_staged": {
+      "complete": true,
+      "pages": 2078,
+      "fresh_page_evaluations": 2078,
+      "reused_page_scores": 0,
+      "official_errors": 0,
+      "scores": {
+        "charts": 0.5782609800215434,
+        "visual_grounding": 0.7044372959382412,
+        "tables": 0.8177032215627547,
+        "content_faithfulness": 0.8812009445647999,
+        "semantic_formatting": 0.6806841200304778,
+        "overall": 0.7324573124235634
+      },
+      "independent_scores": {
+        "tables": 0.8177032215627547,
+        "charts": 0.5782609800215434,
+        "content_faithfulness": 0.8812009445647999,
+        "semantic_formatting": 0.6806841200304778,
+        "visual_grounding": 0.7044372959382412,
+        "overall": 0.7324573124235634
+      },
+      "denominators": {
+        "tables": 503,
+        "charts": 568,
+        "content_faithfulness": 506,
+        "semantic_formatting": 456,
+        "visual_grounding": 500
+      },
+      "prediction_sha256": "8a58fee69060853d9790cb4b3035ad2871b8d80087cb1a743d9e41da1cf2052b",
+      "seconds": 111.54542283300543
+    },
+    "overlap/single_pipelined": {
+      "complete": true,
+      "pages": 2078,
+      "fresh_page_evaluations": 2078,
+      "reused_page_scores": 0,
+      "official_errors": 0,
+      "scores": {
+        "charts": 0.5673926767676768,
+        "visual_grounding": 0.7045478807517503,
+        "tables": 0.8040366382462675,
+        "content_faithfulness": 0.8813186137735038,
+        "semantic_formatting": 0.6821703978529401,
+        "overall": 0.7278932414784277
+      },
+      "independent_scores": {
+        "tables": 0.8040366382462675,
+        "charts": 0.5673926767676768,
+        "content_faithfulness": 0.8813186137735038,
+        "semantic_formatting": 0.6821703978529401,
+        "visual_grounding": 0.7045478807517503,
+        "overall": 0.7278932414784277
+      },
+      "denominators": {
+        "tables": 503,
+        "charts": 568,
+        "content_faithfulness": 506,
+        "semantic_formatting": 456,
+        "visual_grounding": 500
+      },
+      "prediction_sha256": "739f3363883697040f2ab125917ada435824046b47d20be5d4c3930af87a9e83",
+      "seconds": 111.69487654499244
+    },
+    "overlap/single_staged": {
+      "complete": true,
+      "pages": 2078,
+      "fresh_page_evaluations": 2078,
+      "reused_page_scores": 0,
+      "official_errors": 0,
+      "scores": {
+        "charts": 0.5662119814848688,
+        "visual_grounding": 0.7045672189887794,
+        "tables": 0.8039370791018328,
+        "content_faithfulness": 0.8813104792419619,
+        "semantic_formatting": 0.682417518427061,
+        "overall": 0.7276888554489008
+      },
+      "independent_scores": {
+        "tables": 0.8039370791018328,
+        "charts": 0.5662119814848688,
+        "content_faithfulness": 0.8813104792419619,
+        "semantic_formatting": 0.682417518427061,
+        "visual_grounding": 0.7045672189887794,
+        "overall": 0.7276888554489008
+      },
+      "denominators": {
+        "tables": 503,
+        "charts": 568,
+        "content_faithfulness": 506,
+        "semantic_formatting": 456,
+        "visual_grounding": 500
+      },
+      "prediction_sha256": "a8b14f3146177bfb7ca9dc07263f0efc66ab5dcb08588f6a84d538f026c1c7b4",
+      "seconds": 110.24167573684826
+    },
+    "overlap/triple_pipelined": {
+      "complete": true,
+      "pages": 2078,
+      "fresh_page_evaluations": 2078,
+      "reused_page_scores": 0,
+      "official_errors": 0,
+      "scores": {
+        "charts": 0.5786260492246408,
+        "visual_grounding": 0.7047247783238033,
+        "tables": 0.8247890476268587,
+        "content_faithfulness": 0.8807721095566149,
+        "semantic_formatting": 0.685309450055923,
+        "overall": 0.7348442869575681
+      },
+      "independent_scores": {
+        "tables": 0.8247890476268587,
+        "charts": 0.5786260492246408,
+        "content_faithfulness": 0.8807721095566149,
+        "semantic_formatting": 0.685309450055923,
+        "visual_grounding": 0.7047247783238033,
+        "overall": 0.7348442869575681
+      },
+      "denominators": {
+        "tables": 503,
+        "charts": 568,
+        "content_faithfulness": 506,
+        "semantic_formatting": 456,
+        "visual_grounding": 500
+      },
+      "prediction_sha256": "a216fdafe717e66b495e60f3f9ed92d7dd502f82a3a272d01986151a09ebf23a",
+      "seconds": 111.52612566621974
+    },
+    "overlap/triple_staged": {
+      "complete": true,
+      "pages": 2078,
+      "fresh_page_evaluations": 2078,
+      "reused_page_scores": 0,
+      "official_errors": 0,
+      "scores": {
+        "charts": 0.5788412927057294,
+        "visual_grounding": 0.7059309638992248,
+        "tables": 0.8268812313288487,
+        "content_faithfulness": 0.8807957411999627,
+        "semantic_formatting": 0.6831443877791764,
+        "overall": 0.7351187233825884
+      },
+      "independent_scores": {
+        "tables": 0.8268812313288487,
+        "charts": 0.5788412927057294,
+        "content_faithfulness": 0.8807957411999627,
+        "semantic_formatting": 0.6831443877791764,
+        "visual_grounding": 0.7059309638992248,
+        "overall": 0.7351187233825884
+      },
+      "denominators": {
+        "tables": 503,
+        "charts": 568,
+        "content_faithfulness": 506,
+        "semantic_formatting": 456,
+        "visual_grounding": 500
+      },
+      "prediction_sha256": "8f832910cb451b4cb52b62d5efddaa87956d1b93052ec99a71dbcac4002cd436",
+      "seconds": 112.21417835800094
+    }
+  },
+  "scorer_revision": "9af4102e26b51f234ab5f037e19fec05c0696ec6",
+  "source_hashes_verified": 241,
+  "gpu_utilization_snapshots": [
+    {
+      "observed_at_utc": "2026-10-17T22:45:26.944779+00:00",
+      "gpu_utilization_percent": 98,
+      "power_watts": 680.93,
+      "memory_used_mib": 78925,
+      "scope": "one live snapshot; not a run average"
+    },
+    {
+      "observed_at_utc": "2026-10-17T22:59:45.983785+00:00",
+      "stage": "triple_pipelined",
+      "gpu_utilization_percent": 100,
+      "power_watts": 665.11,
+      "memory_used_mib": 79869,
+      "scope": "one live snapshot during triple-pass inference; not a run average"
+    }
+  ],
+  "artifact_check": {
+    "files": 77,
+    "bytes": 49047529,
+    "per_page_artifacts": false
+  },
+  "limitations": [
+    "Nonzero-temperature generation can differ with batching; request and completion-token totals are reported.",
+    "Token-limited responses are retained only through explicit allow_partial=True; affected pages are counted incomplete.",
+    "Prepared throughput includes crop preparation and rendering; excludes startup, initial preparation, warmup and serialization.",
+    "These measurements are serving profiles, not a hardware throughput ceiling."
+  ],
+  "merge_only_replays_on_baseline_triple_responses": {
+    "keep_original_charts": {
+      "scores": {
+        "charts": 0.575614863422962,
+        "visual_grounding": 0.7048420250334769,
+        "tables": 0.8234070433681294,
+        "content_faithfulness": 0.8808105394777015,
+        "semantic_formatting": 0.6812589701148343,
+        "overall": 0.7331866882834208
+      },
+      "fresh_page_evaluations": 2078,
+      "official_errors": 0,
+      "replay": {
+        "pages": 2078,
+        "variant": "keep_original_charts",
+        "seconds": 3.7608036780147813,
+        "overlapping_alternative_blocks_inserted": 0,
+        "new_inference_requests": 0
+      }
+    },
+    "reference_merge": {
+      "scores": {
+        "charts": 0.6462693458732192,
+        "visual_grounding": 0.7065754139322148,
+        "tables": 0.8442506317977139,
+        "content_faithfulness": 0.8809734768808889,
+        "semantic_formatting": 0.6813144713860899,
+        "overall": 0.7518766679740253
+      },
+      "fresh_page_evaluations": 2078,
+      "official_errors": 0,
+      "replay": {
+        "pages": 2078,
+        "variant": "reference_merge",
+        "seconds": 5.24810417900153,
+        "overlapping_alternative_blocks_inserted": 1664,
+        "new_inference_requests": 0
+      }
+    },
+    "reference_merge_complete_crops": {
+      "scores": {
+        "charts": 0.6466214585492754,
+        "visual_grounding": 0.7065754139322148,
+        "tables": 0.8442506317977139,
+        "content_faithfulness": 0.8809734768808889,
+        "semantic_formatting": 0.6813144713860899,
+        "overall": 0.7519470905092366
+      },
+      "fresh_page_evaluations": 2078,
+      "official_errors": 0,
+      "replay": {
+        "pages": 2078,
+        "variant": "reference_merge_complete_crops",
+        "seconds": 6.634797670994885,
+        "overlapping_alternative_blocks_inserted": 1660,
+        "new_inference_requests": 0
+      }
+    }
+  },
+  "quality_interpretation": "Reference merging can preserve overlapping alternative tables/charts. The chart evaluator searches all rendered tables for the best matching answer. General document output uses guarded replacement and rejects overlapping same-class additions; these are different output contracts.",
+  "warmup_and_selection": {
+    "timed_full_runs_start_after": [
+      "8-page canary for each mode",
+      "256-page double/triple concurrency pilots"
+    ],
+    "canary_pages_per_mode": 8,
+    "pilot_pages": 256,
+    "pilot_limits": [
+      128,
+      256
+    ]
+  }
+}

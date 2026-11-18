@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: nemotron-parse
+Version: 3.5.0.post7
+Summary: Nemotron 3.5 Parse document parsing and vLLM integration
+License-Expression: LicenseRef-OpenMDW-1.1
+Requires-Python: >=3.10
+License-File: LICENSE
+License-File: THIRD_PARTY_NOTICES.md
+License-File: TOKENIZER_ATTRIBUTION.md
+Requires-Dist: torch<2.14,>=2.11.0
+Requires-Dist: torchvision<0.29,>=0.26.0
+Requires-Dist: transformers<5.20,>=5.14.1
+Requires-Dist: huggingface-hub<2,>=1.24.0
+Requires-Dist: packaging>=24.2
+Requires-Dist: accelerate==1.12.0
+Requires-Dist: timm==1.0.22
+Requires-Dist: einops==0.8.1
+Requires-Dist: Pillow<13,>=12.2.0
+Requires-Dist: numpy==2.2.6
+Requires-Dist: safetensors==0.8.0
+Requires-Dist: beautifulsoup4==4.13.3
+Provides-Extra: vllm
+Requires-Dist: vllm<0.33,>=0.25.0; extra == "vllm"
+Provides-Extra: client
+Requires-Dist: openai==2.30.0; extra == "client"
+Requires-Dist: httpx==0.28.1; extra == "client"
+Provides-Extra: dev
+Requires-Dist: pytest==9.0.2; extra == "dev"
+Dynamic: license-file

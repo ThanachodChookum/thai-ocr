@@ -1,0 +1,34 @@
+{
+  "format": "safetensors",
+  "description": "One MTP prediction head integrated into model.safetensors. Standard Transformers generation uses the main decoder; vLLM enables one-token speculative decoding with method=mtp.",
+  "tensor_file": "model.safetensors",
+  "tensors": {
+    "decoder.extra_heads.0.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32"
+    },
+    "decoder.extra_heads.0.weight": {
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32"
+    },
+    "decoder.extra_proj.0.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "float32"
+    },
+    "decoder.extra_proj.0.weight": {
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "float32"
+    }
+  },
+  "integrated": true
+}

@@ -1,0 +1,297 @@
+{
+  "status": "verified existing real-model receipts; no new GPU run for timing-only package update",
+  "pages_per_profile": 2078,
+  "hardware": "one H100 80GB",
+  "server_backend": "uni",
+  "tensor_parallel_size": 1,
+  "vllm": "0.26.0",
+  "profile": "FA3, MTP1, max_model_len=16384, max_num_seqs=192, max_num_batched_tokens=16384",
+  "model_weight_sha256": "81dd7609c589f3694ce75520c25af5010953231358de6aec4d03e8c6aac787e9",
+  "recommended_quality_preserving_profiles": [
+    {
+      "mode": "single",
+      "measured_package": "3.5.0.post4",
+      "source_receipt": "/lustre/fsw/portfolios/nemotron/projects/nemotron_parse_dev/users/rchesler/analysis/general_postprocessor_speed_20261017/full/single_c256/complete.json",
+      "source_receipt_sha256": "07cd8d23d8e2724d496caf813348db7d8e94c7f65bf01d084206cbd5335ed1be",
+      "concurrency": 256,
+      "schedule": "staged",
+      "pages": 2078,
+      "complete_pages": 2045,
+      "inference_seconds": 134.78283468799782,
+      "inference_pages_per_second": 15.417393504226709,
+      "complete_inference_pages_per_second": 15.172555205073927,
+      "original_pipeline_seconds": 137.7506838600093,
+      "requests": {
+        "fullpage": 2078,
+        "detection": 0,
+        "crop": 0
+      },
+      "token_limited_responses": {
+        "fullpage": 33
+      },
+      "completion_tokens": 2719778,
+      "extraction_method": "saved fullpage stage wall timer; conservatively includes HTTP executor setup/teardown",
+      "generation_metrics": {
+        "mode": "single",
+        "pages": 2078,
+        "complete_pages": 2045,
+        "incomplete_pages": 33,
+        "concurrency": 256,
+        "postprocess_workers": 8,
+        "preprocessing_seconds": 10.932252227998106,
+        "pipeline_seconds": 137.7506838600093,
+        "processed_pages_per_second": 15.08522456492333,
+        "complete_pages_per_second": 14.845661325923103,
+        "stage_times": {
+          "fullpage_seconds": 134.78283468799782,
+          "postprocessing_seconds": 2.9462760030000936
+        },
+        "requests": {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 0
+        },
+        "token_limited_responses": {
+          "fullpage": 33
+        },
+        "completion_tokens": 2719778,
+        "postprocessing": {
+          "infer_headers": true,
+          "render_charts": true,
+          "split_chart_value_percent": true,
+          "relocate_chart_captions": true,
+          "normalize_text": true,
+          "deduplicate": true
+        },
+        "allow_partial": true,
+        "timing_excludes": [
+          "initial image preparation",
+          "output serialization",
+          "server startup",
+          "warmup requests"
+        ],
+        "timing_includes": [
+          "all mode inference stages",
+          "predicted-region crop preparation",
+          "merge and document rendering"
+        ],
+        "keys_sha256": "e2800a56d79085a612e2677e87fabd9735be7d92479cd68ad750ff3b49f67d3a",
+        "input_pages": 2078,
+        "output_serialization_seconds": 1.2913870430202223,
+        "pipeline_plus_serialization_seconds": 139.04207090302953,
+        "pages_per_second_with_serialization": 14.945116873649235,
+        "complete": true
+      }
+    },
+    {
+      "mode": "double",
+      "measured_package": "3.5.0.post5",
+      "source_receipt": "/lustre/fsw/portfolios/nemotron/projects/nemotron_parse_dev/users/rchesler/analysis/general_postprocessor_speed_20261017/accuracy_restored_20261017/full/double/complete.json",
+      "source_receipt_sha256": "2a1fc5d79989a17b6ccf825b8d9d964ae53ce8aedf7f31407c8191c0aa38f533",
+      "concurrency": 256,
+      "schedule": "pipelined",
+      "pages": 2078,
+      "complete_pages": 2043,
+      "inference_seconds": 178.3529313809995,
+      "inference_pages_per_second": 11.651056048868371,
+      "complete_inference_pages_per_second": 11.454815932549607,
+      "original_pipeline_seconds": 178.53091148199746,
+      "requests": {
+        "fullpage": 2078,
+        "detection": 0,
+        "crop": 2339
+      },
+      "token_limited_responses": {
+        "fullpage": 26,
+        "crop": 9
+      },
+      "completion_tokens": 3800986,
+      "extraction_method": "maximum stage end minus minimum stage start on common clock",
+      "generation_metrics": {
+        "mode": "double",
+        "merge_policy": "alternatives",
+        "schedule": "pipelined",
+        "peak_inflight_requests": 256,
+        "request_service_seconds": {
+          "fullpage": 28709.884806043323,
+          "crop": 13957.128172721918
+        },
+        "stage_first_request_seconds": {
+          "fullpage": 0.0035496869968483225,
+          "crop": 8.328730886001722
+        },
+        "overlapping_stage_times": true,
+        "pages": 2078,
+        "complete_pages": 2043,
+        "incomplete_pages": 35,
+        "concurrency": 256,
+        "postprocess_workers": 8,
+        "preprocessing_seconds": 9.697014473000308,
+        "pipeline_seconds": 178.53091148199746,
+        "processed_pages_per_second": 11.639440939108965,
+        "complete_pages_per_second": 11.44339645745891,
+        "stage_times": {
+          "fullpage_span_seconds": 175.82064464699943,
+          "crop_span_seconds": 170.02775018199463
+        },
+        "requests": {
+          "fullpage": 2078,
+          "detection": 0,
+          "crop": 2339
+        },
+        "token_limited_responses": {
+          "fullpage": 26,
+          "crop": 9
+        },
+        "completion_tokens": 3800986,
+        "postprocessing": {
+          "infer_headers": true,
+          "render_charts": true,
+          "split_chart_value_percent": true,
+          "relocate_chart_captions": true,
+          "normalize_text": true,
+          "deduplicate": true
+        },
+        "allow_partial": true,
+        "timing_excludes": [
+          "initial image preparation",
+          "output serialization",
+          "server startup",
+          "warmup requests"
+        ],
+        "timing_includes": [
+          "all mode inference stages",
+          "predicted-region crop preparation",
+          "merge and document rendering"
+        ],
+        "keys_sha256": "e2800a56d79085a612e2677e87fabd9735be7d92479cd68ad750ff3b49f67d3a",
+        "input_pages": 2078,
+        "vllm_queue": {
+          "sample_interval_seconds": 0.5,
+          "samples": 352,
+          "peak_running": 192.0,
+          "peak_waiting": 64.0,
+          "fraction_samples_with_waiting": 0.8977272727272727,
+          "mean_running": 175.42613636363637
+        },
+        "output_serialization_seconds": 1.6826819609996164,
+        "pipeline_plus_serialization_seconds": 180.21359344299708,
+        "pages_per_second_with_serialization": 11.530761693941178,
+        "complete": true
+      }
+    },
+    {
+      "mode": "triple",
+      "measured_package": "3.5.0.post5",
+      "source_receipt": "/lustre/fsw/portfolios/nemotron/projects/nemotron_parse_dev/users/rchesler/analysis/general_postprocessor_speed_20261017/accuracy_restored_20261017/full/triple/complete.json",
+      "source_receipt_sha256": "08a8671ae3efd29a34241b32990c4f8d539a6e0c62a1b9b88430433abedd3210",
+      "concurrency": 128,
+      "schedule": "pipelined",
+      "pages": 2078,
+      "complete_pages": 2038,
+      "inference_seconds": 195.69899474299746,
+      "inference_pages_per_second": 10.618347849609256,
+      "complete_inference_pages_per_second": 10.4139523183367,
+      "original_pipeline_seconds": 195.8028804409987,
+      "requests": {
+        "fullpage": 2078,
+        "detection": 2078,
+        "crop": 2609
+      },
+      "token_limited_responses": {
+        "crop": 22,
+        "fullpage": 33
+      },
+      "completion_tokens": 4238196,
+      "extraction_method": "maximum stage end minus minimum stage start on common clock",
+      "generation_metrics": {
+        "mode": "triple",
+        "merge_policy": "alternatives",
+        "schedule": "pipelined",
+        "peak_inflight_requests": 128,
+        "request_service_seconds": {
+          "detection": 2116.9487077718077,
+          "crop": 7074.808867427841,
+          "fullpage": 14919.450061689073
+        },
+        "stage_first_request_seconds": {
+          "detection": 0.0024413679930148646,
+          "crop": 0.3488499709928874,
+          "fullpage": 0.0005174870020709932
+        },
+        "overlapping_stage_times": true,
+        "pages": 2078,
+        "complete_pages": 2038,
+        "incomplete_pages": 40,
+        "concurrency": 128,
+        "postprocess_workers": 8,
+        "preprocessing_seconds": 9.697014473000308,
+        "pipeline_seconds": 195.8028804409987,
+        "processed_pages_per_second": 10.612714150679535,
+        "complete_pages_per_second": 10.408427064044702,
+        "stage_times": {
+          "detection_span_seconds": 187.84758807100297,
+          "crop_span_seconds": 195.35066225900664,
+          "fullpage_span_seconds": 195.54977705900092
+        },
+        "requests": {
+          "fullpage": 2078,
+          "detection": 2078,
+          "crop": 2609
+        },
+        "token_limited_responses": {
+          "crop": 22,
+          "fullpage": 33
+        },
+        "completion_tokens": 4238196,
+        "postprocessing": {
+          "infer_headers": true,
+          "render_charts": true,
+          "split_chart_value_percent": true,
+          "relocate_chart_captions": true,
+          "normalize_text": true,
+          "deduplicate": true
+        },
+        "allow_partial": true,
+        "timing_excludes": [
+          "initial image preparation",
+          "output serialization",
+          "server startup",
+          "warmup requests"
+        ],
+        "timing_includes": [
+          "all mode inference stages",
+          "predicted-region crop preparation",
+          "merge and document rendering"
+        ],
+        "keys_sha256": "e2800a56d79085a612e2677e87fabd9735be7d92479cd68ad750ff3b49f67d3a",
+        "input_pages": 2078,
+        "vllm_queue": {
+          "sample_interval_seconds": 0.5,
+          "samples": 385,
+          "peak_running": 128.0,
+          "peak_waiting": 4.0,
+          "fraction_samples_with_waiting": 0.0025974025974025974,
+          "mean_running": 113.85194805194806
+        },
+        "output_serialization_seconds": 1.8849293050006963,
+        "pipeline_plus_serialization_seconds": 197.6878097459994,
+        "pages_per_second_with_serialization": 10.511523207576294,
+        "complete": true
+      }
+    }
+  ],
+  "interpretation": [
+    "Prepared-page batch throughput, not PDF-to-document end-to-end throughput or one-page latency.",
+    "Counts all 2078 processed pages; token-limited pages are incomplete and are separately reported.",
+    "Double/triple use the restored alternatives merge and default chart rules. Single has no crop merge and was measured before that merge-only change.",
+    "Dependent crop selection, encoding, dispatch, queueing, model image encoding and generation remain on the inference critical path.",
+    "Initial preparation, startup, warmup and output serialization excluded. Final rendering tail excluded; concurrent rendering contention remains in observed wall time and is not subtracted.",
+    "Historical fastest observed guarded-merge runs reached 11.8805158572 double and 10.9075689818 triple pages/s. They have lower quality and are not the recommended quality-preserving profiles.",
+    "These are observed configurations, not a hardware ceiling. Nonzero-temperature generation and scheduler batching cause run-to-run variation.",
+    "Single stage timer includes executor overhead; this makes its inferred 15.42 pages/s slightly conservative.",
+    "The post6 change only adds timing counters; no new model generation or fresh score is claimed."
+  ],
+  "quality_receipt": "accuracy_restoration.json",
+  "prior_speed_receipt": "batch_benchmarks.json"
+}

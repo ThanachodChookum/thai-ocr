@@ -1,0 +1,6 @@
+[
+  {
+    "key": "malformed_footer_fixture",
+    "raw_out": "<x_0.1><y_0.1>Text 0<x_0.8><y_0.8><class_Text><x_0.1><y_0.1>Text 1<x_0.8><y_0.8><class_Text><x_0.1><y_0.1>Text 2<x_0.8><y_0.8><class_Text><x_0.1><y_0.1>Text 3<x_0.8><y_0.8><class_Text><x_0.1><y_0.1>Text 4<x_0.8><y_0.8><class_Text><x_0.1><y_0.1>Text 5<x_0.8><y_0.8><class_Text><x_0.1><y_0.1>Text 6<x_0.8><y_0.8><class_Text><x_0.1><y_0.1>Text 7<x_0.8><y_0.8><class_Text><x_0.1><y_0.1>Text 8<x_0.8><y_0.8><class_Text><x_0.1><y_0.1>Text 9<x_0.8><y_0.8><class_Text><x_0.1><y_0.1>Text 10<x_0.8><y_0.8><class_Text><x_0.1><y_0.1>Text 11<x_0.8><y_0.8><class_Text><x_0.1><y_0.1>Text 12<x_0.8><y_0.8><class_Text><x_0.1><y_0.1>Text 13<x_0.8><y_0.8><class_Text><x_0.1><y_0.1>Text 14<x_0.8><y_0.8><class_Text><x_0.1934><y_0.925>Footer text<x_0.org><y_0.9641><class_Page-footer>"
+  }
+]

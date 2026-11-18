@@ -1,0 +1,88 @@
+{
+  "rows": [
+    {
+      "concurrency": 1,
+      "tested_rates": {
+        "8": 2.2108561330942393,
+        "16": 3.021511949376218,
+        "32": 3.7446092933709183
+      },
+      "best_tested_length": 32
+    },
+    {
+      "concurrency": 2,
+      "tested_rates": {
+        "32": 5.883906253469279
+      },
+      "best_tested_length": 32
+    },
+    {
+      "concurrency": 4,
+      "tested_rates": {
+        "32": 9.256247483196882
+      },
+      "best_tested_length": 32
+    },
+    {
+      "concurrency": 8,
+      "tested_rates": {
+        "8": 10.549156733860887,
+        "16": 12.641692517219202,
+        "32": 13.531543015454753
+      },
+      "best_tested_length": 32
+    },
+    {
+      "concurrency": 16,
+      "tested_rates": {
+        "32": 15.87096877311351
+      },
+      "best_tested_length": 32
+    },
+    {
+      "concurrency": 32,
+      "tested_rates": {
+        "8": 17.189132696632495,
+        "16": 18.12055641540848,
+        "32": 17.05121141869504
+      },
+      "best_tested_length": 16
+    },
+    {
+      "concurrency": 64,
+      "tested_rates": {
+        "16": 19.09674833981213,
+        "32": 17.683460109432588
+      },
+      "best_tested_length": 16
+    },
+    {
+      "concurrency": 128,
+      "tested_rates": {
+        "8": 19.00448074115009,
+        "16": 19.630127496093024,
+        "32": 18.14602028790623
+      },
+      "best_tested_length": 16
+    },
+    {
+      "concurrency": 256,
+      "tested_rates": {
+        "8": 19.05230304465591,
+        "16": 19.519740880365504,
+        "32": 18.035788599093195
+      },
+      "best_tested_length": 16
+    },
+    {
+      "concurrency": 512,
+      "tested_rates": {
+        "8": 19.786097084173154,
+        "16": 19.502632231125695,
+        "32": 18.446999616392223
+      },
+      "best_tested_length": 8
+    }
+  ],
+  "protocol": "native greedy;three full-set trials per populated cell"
+}

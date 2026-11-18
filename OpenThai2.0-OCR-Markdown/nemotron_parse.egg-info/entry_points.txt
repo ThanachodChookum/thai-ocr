@@ -1,0 +1,5 @@
+[console_scripts]
+nemotron-parse = nemotron_parse.inference:main
+
+[vllm.general_plugins]
+nemotron_parse_35 = vllm_tied_patch.plugin:register

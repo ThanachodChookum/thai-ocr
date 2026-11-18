@@ -1,0 +1,167 @@
+{
+  "complete": true,
+  "new_inference_requests": 0,
+  "fixtures": {
+    "data_row_not_promoted": true,
+    "explicit_rowspan_preserved": true,
+    "bold_headers_preserved": true,
+    "year_data_not_promoted": true,
+    "bold_numeric_data_not_promoted": true,
+    "empty_title_full_pipeline": true,
+    "nonempty_title_preserved": true
+  },
+  "modes": {
+    "single": {
+      "before": {
+        "charts": 0.5645987033310976,
+        "visual_grounding": 0.7038987254479313,
+        "tables": 0.8053122108285484,
+        "content_faithfulness": 0.8795954910356779,
+        "semantic_formatting": 0.6826974043965897,
+        "overall": 0.727220507007969
+      },
+      "after": {
+        "charts": 0.5645987033310976,
+        "visual_grounding": 0.7038987254479313,
+        "tables": 0.8050745889408272,
+        "content_faithfulness": 0.8795954910356779,
+        "semantic_formatting": 0.6826974043965897,
+        "overall": 0.7271729826304247
+      },
+      "delta_percentage_points": {
+        "charts": 0.0,
+        "visual_grounding": 0.0,
+        "tables": -0.023762188772125103,
+        "content_faithfulness": 0.0,
+        "semantic_formatting": 0.0,
+        "overall": -0.004752437754429462
+      },
+      "changed_rendered_pages": 4,
+      "per_page_metric_changes": [
+        {
+          "key": "parsebench_01182",
+          "metric": "tables",
+          "before": 0.6988383064584988,
+          "after": 0.5793144969346893,
+          "delta": -0.11952380952380948
+        }
+      ],
+      "official_errors": 0,
+      "pages": 2078
+    },
+    "double": {
+      "before": {
+        "charts": 0.6356501382029551,
+        "visual_grounding": 0.7066562965971672,
+        "tables": 0.8407067825030173,
+        "content_faithfulness": 0.8797729265983598,
+        "semantic_formatting": 0.6816760525433225,
+        "overall": 0.7488924392889644
+      },
+      "after": {
+        "charts": 0.6356501382029551,
+        "visual_grounding": 0.7066562965971672,
+        "tables": 0.840469160615296,
+        "content_faithfulness": 0.8797729265983598,
+        "semantic_formatting": 0.6816760525433225,
+        "overall": 0.7488449149114201
+      },
+      "delta_percentage_points": {
+        "charts": 0.0,
+        "visual_grounding": 0.0,
+        "tables": -0.023762188772136206,
+        "content_faithfulness": 0.0,
+        "semantic_formatting": 0.0,
+        "overall": -0.004752437754429462
+      },
+      "changed_rendered_pages": 4,
+      "per_page_metric_changes": [
+        {
+          "key": "parsebench_01182",
+          "metric": "tables",
+          "before": 0.7234131235827664,
+          "after": 0.603889314058957,
+          "delta": -0.11952380952380948
+        }
+      ],
+      "official_errors": 0,
+      "pages": 2078
+    },
+    "triple": {
+      "before": {
+        "charts": 0.6439854404202996,
+        "visual_grounding": 0.7067302912429704,
+        "tables": 0.8469600468963427,
+        "content_faithfulness": 0.8795990444408648,
+        "semantic_formatting": 0.6827725437713926,
+        "overall": 0.752009473354374
+      },
+      "after": {
+        "charts": 0.6439854404202996,
+        "visual_grounding": 0.7067302912429704,
+        "tables": 0.8467224250086215,
+        "content_faithfulness": 0.8795990444408648,
+        "semantic_formatting": 0.6827725437713926,
+        "overall": 0.7519619489768298
+      },
+      "delta_percentage_points": {
+        "charts": 0.0,
+        "visual_grounding": 0.0,
+        "tables": -0.023762188772125103,
+        "content_faithfulness": 0.0,
+        "semantic_formatting": 0.0,
+        "overall": -0.004752437754418359
+      },
+      "changed_rendered_pages": 4,
+      "per_page_metric_changes": [
+        {
+          "key": "parsebench_01182",
+          "metric": "tables",
+          "before": 0.6891088441448464,
+          "after": 0.5695850346210369,
+          "delta": -0.11952380952380948
+        }
+      ],
+      "official_errors": 0,
+      "pages": 2078
+    },
+    "triple_detector": {
+      "before": {
+        "charts": 0.6425329756315671,
+        "visual_grounding": 0.7066302912429703,
+        "tables": 0.8460613242768323,
+        "content_faithfulness": 0.879557172435472,
+        "semantic_formatting": 0.6826974043965897,
+        "overall": 0.7514958335966864
+      },
+      "after": {
+        "charts": 0.6425329756315671,
+        "visual_grounding": 0.7066302912429703,
+        "tables": 0.8458237023891111,
+        "content_faithfulness": 0.879557172435472,
+        "semantic_formatting": 0.6826974043965897,
+        "overall": 0.751448309219142
+      },
+      "delta_percentage_points": {
+        "charts": 0.0,
+        "visual_grounding": 0.0,
+        "tables": -0.023762188772125103,
+        "content_faithfulness": 0.0,
+        "semantic_formatting": 0.0,
+        "overall": -0.004752437754440564
+      },
+      "changed_rendered_pages": 4,
+      "per_page_metric_changes": [
+        {
+          "key": "parsebench_01182",
+          "metric": "tables",
+          "before": 0.6891088441448464,
+          "after": 0.5695850346210369,
+          "delta": -0.11952380952380948
+        }
+      ],
+      "official_errors": 0,
+      "pages": 2078
+    }
+  }
+}

@@ -1,0 +1,14 @@
+services:
+  nemotron-parse:
+    build: .
+    image: nemotron-parse:3.5.0.post7
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    shm_size: 8gb
+    ports:
+      - "8000:8000"

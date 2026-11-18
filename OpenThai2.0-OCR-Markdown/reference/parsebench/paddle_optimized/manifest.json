@@ -1,0 +1,22 @@
+{
+  "README.md": {
+    "bytes": 831,
+    "sha256": "1d2b49a0f72018695fef1e18e30495020f141d449c697a2005c4095e430acb4b"
+  },
+  "benchmark_metrics.json": {
+    "bytes": 821,
+    "sha256": "dfa9a63f8ac79454eb48d2bf6a659467569d1998addab04b06578e3b2b4dd3ca"
+  },
+  "complete.json": {
+    "bytes": 45,
+    "sha256": "a5144a46b90217d74deceee2422dbbc5ff96ba659d7680fd759a3b9205e64f7c"
+  },
+  "predictions.jsonl.gz": {
+    "bytes": 5687947,
+    "sha256": "e7eb3cc72209f7f5e38b226cb9e2c6025051ed4b686b2b9040fd39cd59e3248f"
+  },
+  "serving_contract.json": {
+    "bytes": 958,
+    "sha256": "3625dcd179c5d9d93dda44bd18d77751dbb21f5d74345f47fa45d4249b3c6a0a"
+  }
+}

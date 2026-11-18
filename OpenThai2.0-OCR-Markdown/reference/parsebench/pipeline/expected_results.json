@@ -1,0 +1,117 @@
+{
+  "dataset_pages": 2078,
+  "scorer_revision": "9af4102e26b51f234ab5f037e19fec05c0696ec6",
+  "model_revision": "e5e0406c85ec241b164907bf41ebd648a54e4ea2",
+  "model_sha256": "81dd7609c589f3694ce75520c25af5010953231358de6aec4d03e8c6aac787e9",
+  "scores": {
+    "single": {
+      "charts": 0.5645987033310976,
+      "visual_grounding": 0.7038987254479313,
+      "tables": 0.8050745889408272,
+      "content_faithfulness": 0.8795954910356779,
+      "semantic_formatting": 0.6826974043965897,
+      "overall": 0.7271729826304247
+    },
+    "double": {
+      "charts": 0.6356501382029551,
+      "visual_grounding": 0.7066562965971672,
+      "tables": 0.840469160615296,
+      "content_faithfulness": 0.8797729265983598,
+      "semantic_formatting": 0.6816760525433225,
+      "overall": 0.7488449149114201
+    },
+    "triple": {
+      "charts": 0.6425329756315671,
+      "visual_grounding": 0.7066302912429703,
+      "tables": 0.8458237023891111,
+      "content_faithfulness": 0.879557172435472,
+      "semantic_formatting": 0.6826974043965897,
+      "overall": 0.751448309219142
+    }
+  },
+  "generation": {
+    "stages": 3,
+    "full_page": {
+      "temperature": 0.2,
+      "repetition_penalty": 1.05,
+      "max_output_tokens": 8744
+    },
+    "self_detection": {
+      "temperature": 0.2,
+      "repetition_penalty": 1.05,
+      "max_output_tokens": 4096
+    },
+    "structural_crops": {
+      "temperature": 0.1,
+      "repetition_penalty": 1.0,
+      "max_output_tokens": 8744
+    },
+    "top_k": 50,
+    "top_p": 1.0,
+    "seed": 20261012,
+    "crop_margin_ratio": 0.04,
+    "crop_margin_pixels": 12,
+    "coordinate_frame": "content_normalized",
+    "merge": "direct-plus-ordered-structural-addonly",
+    "triple_regions": "detector"
+  },
+  "serving": {
+    "gpu_count": 1,
+    "gpu_type": "H100",
+    "dtype": "bfloat16",
+    "executor_backend": "uni",
+    "tensor_parallel_size": 1,
+    "mtp_speculative_tokens": 1,
+    "concurrency": 128,
+    "max_num_seqs": 192,
+    "max_num_batched_tokens": 16384,
+    "context_tokens": 16384,
+    "prefix_caching": false,
+    "flash_attention_version": 3
+  },
+  "postprocessing": {
+    "header_inference": "Explicit rowspans and existing bold markup; colspan-only next rows require all nonempty cells bold and fewer than half numeric",
+    "english_vocabulary": false,
+    "added_header_bold": false,
+    "numeric_pair_columns": [
+      "Value",
+      "Percent"
+    ],
+    "literal_duplicate_cleanup": "exact class, numeric bbox and whitespace-normalized body",
+    "soft_hyphens": "U+00AD between Unicode letters in textual roles, excluding math/code",
+    "empty_prefix_repair": "empty incomplete coordinate/class prefix followed by a new block; skip code/formula/fenced code",
+    "caption_association": "guarded plain above-chart only; below-chart notes retained",
+    "native_chart_subtitles": true,
+    "native_title_guard": "Line-bounded title parsing in both chart rendering paths; empty titles cannot consume axis/subtitle metadata"
+  },
+  "dataset": {
+    "repo": "llamaindex/ParseBench",
+    "revision": "2805a1d940f95a203e0ae4b88be9934f7765b3fc",
+    "pages": 2078,
+    "renderer": "PyMuPDF==1.26.3",
+    "dpi": 150,
+    "jpeg_quality": 92,
+    "source_page_index": 0
+  },
+  "measurement": "Saved actual portable H100 HTTP responses replayed through corrected header/title rendering, followed by fresh official scoring on all2078 pages per mode. Raw outputs, geometry, cell text/order/spans are unchanged; four pages per mode change header roles. No new inference requests.",
+  "wheel": {
+    "file": "nemotron_parse-3.5.0.post2-py3-none-any.whl",
+    "sha256": "63d6fe932dfc3cab5d029086f3c7c0ac7f75fad6f6f8c08799a60c54bfa12bdb"
+  },
+  "optional_profiles": {
+    "triple_union": {
+      "argument": "--triple-regions union",
+      "scores": {
+        "charts": 0.6439854404202996,
+        "visual_grounding": 0.7067302912429704,
+        "tables": 0.8467224250086215,
+        "content_faithfulness": 0.8795990444408648,
+        "semantic_formatting": 0.6827725437713926,
+        "overall": 0.7519619489768298
+      },
+      "duplicate_region_iou": 0.85,
+      "primary_overlap_suppression_iou": 0.5,
+      "max_regions_per_page": 80
+    }
+  }
+}

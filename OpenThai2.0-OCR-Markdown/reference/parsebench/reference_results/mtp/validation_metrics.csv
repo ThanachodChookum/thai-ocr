@@ -1,0 +1,2 @@
+records,missing_predictions,parsebench/charts,parsebench/visual_grounding,parsebench/tables,parsebench/content_faithfulness,parsebench/semantic_formatting,parsebench/overall,parsebench/n_chart,parsebench/n_layout,parsebench/n_table,parsebench/n_text_content,parsebench/n_text_formatting,parsebench/official_eval_errors
+2078,0,0.49890187082088494,0.6590133312588673,0.7260445406268137,0.8683393122305967,0.655621448574151,0.6815841007022627,568.0,564.0,503.0,506.0,476.0,0.0

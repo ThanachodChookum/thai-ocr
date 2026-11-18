@@ -1,0 +1,21 @@
+{
+  "after": {
+    "vllm:spec_decode_num_accepted_tokens_per_pos_total": 434564.0,
+    "vllm:spec_decode_num_accepted_tokens_total": 434564.0,
+    "vllm:spec_decode_num_draft_tokens_total": 482998.0,
+    "vllm:spec_decode_num_drafts_total": 482998.0
+  },
+  "before": {
+    "vllm:spec_decode_num_accepted_tokens_per_pos_total": 44971.0,
+    "vllm:spec_decode_num_accepted_tokens_total": 44971.0,
+    "vllm:spec_decode_num_draft_tokens_total": 47634.0,
+    "vllm:spec_decode_num_drafts_total": 47634.0
+  },
+  "delta": {
+    "vllm:spec_decode_num_accepted_tokens_per_pos_total": 389593.0,
+    "vllm:spec_decode_num_accepted_tokens_total": 389593.0,
+    "vllm:spec_decode_num_draft_tokens_total": 435364.0,
+    "vllm:spec_decode_num_drafts_total": 435364.0
+  },
+  "scope": "all profile requests including untimed warmup"
+}

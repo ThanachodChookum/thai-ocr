@@ -1,0 +1,9 @@
+{
+  "scope": "all profile requests including untimed warmup",
+  "delta": {
+    "vllm:spec_decode_num_accepted_tokens_per_pos_total": 1414061.0,
+    "vllm:spec_decode_num_accepted_tokens_total": 1414061.0,
+    "vllm:spec_decode_num_draft_tokens_total": 1503562.0,
+    "vllm:spec_decode_num_drafts_total": 1503562.0
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "source_contract": "Parse 3.5 single/double/triple prediction-only production renderer, 2026-10-16",
+  "extracted": [
+    {
+      "source": "run_parsebench_page_elements_benchmark.py",
+      "source_sha256": "9dfcdc08a5c6c3bcce03621d831174ad6c958523ee134a758cdd4a60472b969d",
+      "destination": "engine/geometry.py",
+      "selected_definitions": [
+        "BLOCK_RE",
+        "CropSpec",
+        "PageImage",
+        "build_crops",
+        "clamp",
+        "crop_bbox_pixels",
+        "filter_detection_rows",
+        "image_data_url",
+        "make_fallback_detection",
+        "model_bbox_to_image_norm",
+        "model_canvas_norm_to_image_norm",
+        "normalize_detector_label",
+        "parse_label_filter",
+        "parse_model_detection_predictions",
+        "write_jsonl"
+      ],
+      "changes": "Dependency closure only; portable package imports and local converter; no scoring or dataset routing in inference."
+    },
+    {
+      "source": "build_parsebench_hybrid_predictions.py",
+      "source_sha256": "90e78d8fdc52f3b17fee72544542fb4024826627b1ca9907d8d57f00531c216b",
+      "destination": "engine/merge.py",
+      "selected_definitions": [
+        "BLOCK_RE",
+        "Block",
+        "TOKEN_RE",
+        "block_area",
+        "block_with_raw",
+        "build_direct_plus_ordered_structural_addonly",
+        "candidate_structural_blocks",
+        "clamp",
+        "class_for_detector",
+        "clone_prediction",
+        "crop_box_to_page_canvas",
+        "crop_element_blocks_by_page",
+        "crop_markdown",
+        "detector_label_counts",
+        "find_row",
+        "fmt_coord",
+        "image_norm_to_model_canvas_norm",
+        "index_rows",
+        "insert_additions_preserving_direct_order",
+        "iou",
+        "is_duplicate",
+        "load_jsonl",
+        "make_block",
+        "model_canvas_norm_to_image_norm",
+        "normalize_detector_label",
+        "normalized_text",
+        "page_bbox_to_page_canvas",
+        "page_norm_to_output_frame",
+        "parse_blocks",
+        "parse_class_set",
+        "parse_label_filter",
+        "prediction_text",
+        "reading_order_key",
+        "rebuild_blocks",
+        "rebuild_crop_row_blocks",
+        "row_aliases",
+        "strip_model_tokens",
+        "structural_blocks",
+        "text_similarity"
+      ],
+      "changes": "Dependency closure only; portable package imports and local converter; no scoring or dataset routing in inference."
+    },
+    {
+      "source": "parsebench_adapter.py",
+      "source_sha256": "6621fbc9b1fd3b00aaa25954ba6277000295bcd52d89ecff3b3f7e46dcc353ae",
+      "destination": "engine/markdown.py",
+      "selected_definitions": [
+        "NEMOTRON_LATEX2HTML_ROOT",
+        "TEXT_BEARING_CLASSES",
+        "_RE_EXTRACT_CLASS_BBOX",
+        "_simple_latex_table_to_html",
+        "convert_latex_tables_in_markdown",
+        "extract_classes_bboxes",
+        "mmd_to_markdown"
+      ],
+      "changes": "Dependency closure only; portable package imports and local converter; no scoring or dataset routing in inference."
+    },
+    {
+      "source": "parsebench_adapter.py",
+      "source_sha256": "6621fbc9b1fd3b00aaa25954ba6277000295bcd52d89ecff3b3f7e46dcc353ae",
+      "destination": "engine/score_adapter.py",
+      "selected_definitions": [
+        "DEFAULT_MODEL_CANVAS_HEIGHT",
+        "DEFAULT_MODEL_CANVAS_WIDTH",
+        "DEFAULT_PARSEBENCH_ROOT",
+        "DEFAULT_PARSEBENCH_SRC",
+        "LEADERBOARD_FIELDS",
+        "LEADERBOARD_METRICS",
+        "NEMOTRON_LATEX2HTML_ROOT",
+        "OfficialParseBenchScorer",
+        "ParseBenchCache",
+        "ParseBenchSample",
+        "TEXT_BEARING_CLASSES",
+        "YOLO_LABELS",
+        "_PARSEBENCH_FORKED_SCORER",
+        "_RE_EXTRACT_CLASS_BBOX",
+        "_bbox_to_page_normalized",
+        "_bbox_to_pixels",
+        "_bbox_to_xywh_normalized",
+        "_clamp01",
+        "_clean_block_text",
+        "_env_float",
+        "_label_to_yolo",
+        "_layout_item_type",
+        "_metric_dict",
+        "_metric_metadata",
+        "_model_canvas_size",
+        "_prediction_pad_position",
+        "_score_record_in_forked_worker",
+        "_simple_latex_table_to_html",
+        "_unpad_prediction_boxes",
+        "aggregate_official_results",
+        "convert_latex_tables_in_markdown",
+        "ensure_parsebench_imports",
+        "extract_classes_bboxes",
+        "make_inference_result",
+        "make_layout_test_case",
+        "make_parse_test_case",
+        "mmd_to_markdown",
+        "to_layout_output",
+        "to_parse_output"
+      ],
+      "changes": "Dependency closure only; portable package imports and local converter; no scoring or dataset routing in inference."
+    }
+  ],
+  "copied": [
+    {
+      "source": "chart_caption.py",
+      "source_sha256": "a2db2f6a48d1b2d1f285fabc89c001e21e60fca10938ee879066a6373a46ecf0",
+      "destination": "engine/chart_caption.py",
+      "changes": "Added NVIDIA SPDX header; relative converter imports where needed."
+    },
+    {
+      "source": "coco_ocr/convert/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "destination": "engine/convert/__init__.py",
+      "changes": "Added NVIDIA SPDX header; relative converter imports where needed."
+    },
+    {
+      "source": "coco_ocr/convert/hybrid_cleanup.py",
+      "source_sha256": "2acfc1f8f238a4794508a7e5c883f8ede9e8819521de5d024b9ab3df4cfbcdb7",
+      "destination": "engine/convert/hybrid_cleanup.py",
+      "changes": "Added NVIDIA SPDX header; relative converter imports where needed."
+    },
+    {
+      "source": "coco_ocr/convert/hybrid_inline.py",
+      "source_sha256": "0b24d3c1840d65a6adce1bf9f4f03fb214f8a473588d35dcdf1b30732d6710d6",
+      "destination": "engine/convert/hybrid_inline.py",
+      "changes": "Added NVIDIA SPDX header; relative converter imports where needed."
+    },
+    {
+      "source": "coco_ocr/convert/latex2html.py",
+      "source_sha256": "59c382bd472413f1aedc46f3214a634f38cfe8e48ebc7a14e2b6ddd68de030d0",
+      "destination": "engine/convert/latex2html.py",
+      "changes": "Added NVIDIA SPDX header; relative converter imports where needed."
+    },
+    {
+      "source": "coco_ocr/convert/rich_table_fallback.py",
+      "source_sha256": "5c953bebfe5e092b68e7842376bf87013c8d5018639679f47e9c93d3b215ad23",
+      "destination": "engine/convert/rich_table_fallback.py",
+      "changes": "Added NVIDIA SPDX header; relative converter imports where needed."
+    },
+    {
+      "source": "coco_ocr/convert/rich_table_reader.py",
+      "source_sha256": "a219a407feeb34fb24b7d18f8b3fc1c5ec280ae45884922776b0ae3a206fc4b4",
+      "destination": "engine/convert/rich_table_reader.py",
+      "changes": "Added NVIDIA SPDX header; relative converter imports where needed."
+    },
+    {
+      "source": "coco_ocr/convert/semantic_styles.py",
+      "source_sha256": "ff2459b6a0ddddbbee4cf73d1d83b9f3f4380382186968d9e4326d0eb210e373",
+      "destination": "engine/convert/semantic_styles.py",
+      "changes": "Added NVIDIA SPDX header; relative converter imports where needed."
+    },
+    {
+      "source": "header_inference_probe.py",
+      "source_sha256": "8e7a760c3a03072f07be4d5f42e4ddc8ff463a198cb22a34327e2ce75e9aa854",
+      "destination": "engine/header_inference_probe.py",
+      "changes": "Added SPDX header and conservative colspan-only next-row evidence guard; numeric data rows are not inferred as headers."
+    },
+    {
+      "source": "coco_ocr/navit_geometry.py",
+      "source_sha256": "865b9e79bc8b1e1275177523e6ec7c7c0ff5fa00d3e3b317e594ce26889b9771",
+      "destination": "engine/navit_geometry.py",
+      "changes": "Added NVIDIA SPDX header; relative converter imports where needed."
+    },
+    {
+      "source": "policies.py",
+      "source_sha256": "61784366e84dd92a5ba201f59a6b2d2d4003090aa1f1178d6d549af0980e8277",
+      "destination": "engine/policies.py",
+      "changes": "Added NVIDIA SPDX header; relative converter imports where needed."
+    }
+  ],
+  "original_renderer": {
+    "file": "deploy.py",
+    "sha256": "fca5cf36d372f4edd6dc52a22f4ef75c0b420ddb6e2c7b4ce8874db8bbcd5067"
+  },
+  "public_bundle_changes": [
+    "Public dataset PDF/JSONL preparation with exact evaluated rendering.",
+    "Retain span-based and existing-bold header inference; remove English vocabulary and forced header bolding.",
+    "Use Value / Percent headings for existing chart numeric pairs.",
+    "Pin current official scorer source hashes and separate serving/scoring environments."
+  ],
+  "local_candidate_changes": {
+    "base_publication": "2af909a59bdc58813f6d86c9e1c3b192884b38d2",
+    "changes": [
+      "Pure text-transform callback replaces research monkeypatching",
+      "Empty-prefix repair and exact object deduplication after merge",
+      "Plain above-chart caption association, original native subtitles",
+      "Optional frozen union region policy; default remains detector-only",
+      "Line-bounded native title parsing prevents an empty field consuming the next metadata line",
+      "Conservative colspan-only next-row inference requires explicit bold nonnumeric evidence",
+      "Apply line-bounded title parsing to compound/panel chart rendering as well"
+    ],
+    "validation": "Saved actual portable H100 HTTP responses replayed through corrected header/title rendering, followed by fresh official scoring on all2078 pages per mode. Raw outputs, geometry, cell text/order/spans are unchanged; four pages per mode change header roles. No new inference requests."
+  }
+}

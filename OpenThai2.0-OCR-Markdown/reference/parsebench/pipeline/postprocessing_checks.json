@@ -1,0 +1,137 @@
+{
+  "union_region_parity_pages": 2078,
+  "parser_text_invariants": {
+    "checked_pages": 12468,
+    "soft_hyphen_changes_are_only_U00AD_deletions": true,
+    "prefix_repair_preserves_literal_payload_after_removing_serialization_tokens": true,
+    "table_cells_roles_spans_unchanged": true,
+    "table_cell_mismatches": [],
+    "changed_pages": {
+      "soft": {
+        "single": 5,
+        "double": 5,
+        "triple": 5
+      },
+      "prefix": {
+        "single": 39,
+        "double": 42,
+        "triple": 42
+      }
+    }
+  },
+  "numeric_pair_guard_checks": {
+    "passed": true,
+    "cases": [
+      "numeric_pairs",
+      "mixed_values",
+      "one_pair",
+      "missing_percent",
+      "already_separate"
+    ],
+    "non_English_series_heading": "S\u00e9rie",
+    "existing_literals_preserved": true
+  },
+  "excluded_default_changes": [
+    "English header vocabulary",
+    "forced header bold",
+    "canonical Unicode folding",
+    "approximate duplicate pruning",
+    "repeated-header table splitting",
+    "global sampling changes",
+    "long-output or retry policies"
+  ],
+  "empty_title_guard": {
+    "following_metadata_preserved": true,
+    "valid_title_fixture_unchanged": true,
+    "all_actual_outputs_unchanged": true,
+    "scope": "Both chart rendering paths tested; the title-only change has no actual-output effect in the saved run. Header correction changes four pages per mode."
+  },
+  "historical_pre_correction_full_output_parity": {
+    "single": {
+      "pages": 2078,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    "double": {
+      "pages": 2078,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    "triple": {
+      "pages": 2078,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    "triple_control": {
+      "pages": 2078,
+      "mismatch_count": 0,
+      "mismatches": []
+    }
+  },
+  "historical_pre_correction_final_actual_http_output_parity": {
+    "single": {
+      "pages": 2078,
+      "mismatches": 0
+    },
+    "double": {
+      "pages": 2078,
+      "mismatches": 0
+    },
+    "triple": {
+      "pages": 2078,
+      "mismatches": 0
+    },
+    "triple_detector": {
+      "pages": 2078,
+      "mismatches": 0
+    }
+  },
+  "historical_pre_correction_fresh_output_table_fields_roles_spans_unchanged": true,
+  "corrected_header_title_fixtures": {
+    "data_row_not_promoted": true,
+    "explicit_rowspan_preserved": true,
+    "bold_headers_preserved": true,
+    "year_data_not_promoted": true,
+    "bold_numeric_data_not_promoted": true,
+    "empty_title_full_pipeline": true,
+    "nonempty_title_preserved": true
+  },
+  "corrected_renderer_replay": {
+    "new_inference_requests": 0,
+    "fixtures": {
+      "data_row_not_promoted": true,
+      "explicit_rowspan_preserved": true,
+      "bold_headers_preserved": true,
+      "year_data_not_promoted": true,
+      "bold_numeric_data_not_promoted": true,
+      "empty_title_full_pipeline": true,
+      "nonempty_title_preserved": true
+    },
+    "modes": {
+      "single": {
+        "changed_pages": 4,
+        "raw_and_geometry_unchanged": true,
+        "cell_text_order_spans_unchanged": true,
+        "prediction_sha256": "f62ab4ed079b79241cce467eb1ad50577a172ca04124d642c31afba8ab7048b2"
+      },
+      "double": {
+        "changed_pages": 4,
+        "raw_and_geometry_unchanged": true,
+        "cell_text_order_spans_unchanged": true,
+        "prediction_sha256": "3c74420e780ffe36fa60dd3a1abe701d3405be3957242a75326e9fe868a8be6f"
+      },
+      "triple": {
+        "changed_pages": 4,
+        "raw_and_geometry_unchanged": true,
+        "cell_text_order_spans_unchanged": true,
+        "prediction_sha256": "80b7700cd44e9ee3694454b944bbebf7a9c45ee628b33b1af70bfd8c9fb0a207"
+      },
+      "triple_detector": {
+        "changed_pages": 4,
+        "raw_and_geometry_unchanged": true,
+        "cell_text_order_spans_unchanged": true,
+        "prediction_sha256": "cf93b01c97cdc8376e501282cbb2498acd174145de1c7d158e362e85df703a00"
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "package_version": "3.5.0.post7",
+  "parent_revision": "213eed554008e633b1150977049a8c66b7717852",
+  "default_merge_policy": "alternatives",
+  "default_schedule": "pipelined",
+  "chart_rules_enabled_by_default": true,
+  "regression_tests": {
+    "passed": 86,
+    "failed": 0,
+    "source_tested": true,
+    "installed_wheel_tested": true
+  },
+  "wheel": {
+    "filename": "nemotron_parse-3.5.0.post7-py3-none-any.whl",
+    "sha256": "e403d294fc9c0563f6d38028ce0e0a639977fdba2807fa6981692aabbf269077",
+    "all_runtime_python_identical_to_post6": true,
+    "RECORD_verified": true,
+    "repeat_build_identical": true
+  },
+  "runtime_validation": {
+    "new_gpu_runs_for_post7": 0,
+    "new_official_score_runs_for_post7": 0,
+    "note": "Notice/version/header-only release. Runtime Python byte parity with post6 is verified; no new model-inference or scoring result claimed.",
+    "previous_version_validation": {
+      "package_version": "3.5.0.post6",
+      "parent_revision": "6cbbc638b8fdb1d94d76d5b9830d43e55da290ad",
+      "default_merge_policy": "alternatives",
+      "default_schedule": "pipelined",
+      "chart_rules_enabled_by_default": true,
+      "regression_tests": {
+        "passed": 86,
+        "failed": 0,
+        "source_tested": true,
+        "installed_wheel_tested": true,
+        "timing_checks": [
+          "dependent crop preparation counted",
+          "final render excluded",
+          "overlapping spans counted as wall time"
+        ],
+        "existing_coverage": [
+          "default retains differing alternatives",
+          "matching alternatives deduplicated",
+          "explicit guarded replacement",
+          "both merge policies preserve staged/pipelined output equivalence for deterministic responses",
+          "early crops and full-page/detection overlap",
+          "shared HTTP window",
+          "partial output accounting",
+          "HTTP default 128 and custom-backend default 4",
+          "crop geometry, native tables, charts and text preservation"
+        ]
+      },
+      "wheel": {
+        "filename": "nemotron_parse-3.5.0.post6-py3-none-any.whl",
+        "sha256": "25203cdedc40fc7c362f7de60b3b858bbcf227efb4d473ae198242c5b9bb8dff",
+        "source_byte_parity": true,
+        "source_files_checked": 33,
+        "entry_points_verified": true
+      },
+      "runtime_validation": {
+        "new_gpu_runs_for_post6": 0,
+        "new_official_score_runs_for_post6": 0,
+        "scope": "Timing-only instrumentation. Existing post5 model/scoring evidence retained in ACCURACY_RESTORATION_RESULTS.json; existing single-pass timing from post4. No claim that post6 wheel was GPU benchmarked.",
+        "runtime_files_changed_from_post5": [
+          "nemotron_parse/batch.py",
+          "nemotron_parse/SOURCE_MANIFEST.json"
+        ],
+        "model_settings_and_prompts_unchanged": true,
+        "crop_selection_encoding_merge_and_rendering_sources_unchanged": true,
+        "server_plugin_unchanged": true,
+        "timing_receipt": "inference_benchmarks.json",
+        "prior_validation": {
+          "package_version": "3.5.0.post5",
+          "parent_revision": "0fad7099302dc11313b7e3157eb8fd6ae633176e",
+          "default_merge_policy": "alternatives",
+          "optional_merge_policy": "guarded",
+          "default_schedule": "pipelined",
+          "chart_rules_enabled_by_default": true,
+          "regression_tests": {
+            "passed": 83,
+            "failed": 0,
+            "source_tested": true,
+            "installed_wheel_tested": true,
+            "coverage": [
+              "default retains differing alternatives",
+              "matching alternatives deduplicated",
+              "explicit guarded replacement",
+              "both merge policies preserve staged/pipelined output equivalence for deterministic responses",
+              "early crops and full-page/detection overlap",
+              "shared HTTP window",
+              "partial output accounting",
+              "HTTP default 128 and custom-backend default 4",
+              "crop geometry, native tables, charts and text preservation"
+            ]
+          },
+          "wheel": {
+            "filename": "nemotron_parse-3.5.0.post5-py3-none-any.whl",
+            "sha256": "f4efe1f21f73dac8a4ed27ecc5b05b83bd1cd33d5194dfd1569e188a5a4d16d5",
+            "source_byte_parity": true,
+            "source_files_checked": 33,
+            "installed_wheel_tests_passed": 83,
+            "failed": 0,
+            "entry_points_verified": true,
+            "vllm_plugin_source_unchanged": true
+          },
+          "runtime_validation": {
+            "fresh_real_model_full_runs": 2,
+            "pages_per_run": 2078,
+            "one_h100_per_profile": true,
+            "frozen_wheel_matches_release": true,
+            "default_merge_policy_tested": true,
+            "official_score_runs": 6,
+            "fresh_official_page_evaluations": 12468,
+            "official_errors": 0,
+            "official_scorer_revision": "9af4102e26b51f234ab5f037e19fec05c0696ec6",
+            "verified_scorer_source_files": 241,
+            "sampling_settings_unchanged": true,
+            "benchmark_receipt": "accuracy_restoration.json",
+            "prior_scheduler_comparison_receipt": "batch_benchmarks.json",
+            "pinned_reproduction_unchanged": true,
+            "partial_generation_policy": "Benchmarks explicitly allow partial responses; incomplete pages and capped crops remain accounted for. Strict handling remains the API default."
+          },
+          "interpretation": "The restored merge recovers the reference multiple-hypothesis output contract. A higher score over alternatives is not proof of an equally accurate unique transcription. The guarded single-region policy is available explicitly.",
+          "format_validation": {
+            "markdown_fences_balanced": true,
+            "python_examples_parsed": 12,
+            "bash_examples_syntax_checked": true
+          }
+        }
+      },
+      "format_validation": {
+        "markdown_fences_balanced": true,
+        "examples_syntax_checked": {
+          "python": 13,
+          "bash": 9
+        }
+      }
+    }
+  },
+  "compliance_checks": "compliance.json",
+  "build_provenance": "../package/build_provenance.json"
+}
